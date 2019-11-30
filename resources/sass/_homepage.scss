@@ -1,0 +1,219 @@
+h1 {
+    &.welcome-header {
+        font-weight: 600;
+        font-size: 55px;
+        width: 60%;
+        min-width: 300px;
+        max-width: 700px;
+        margin: auto;
+        line-height: 65px;
+        letter-spacing: -0.01em;
+        text-align: center;
+    }
+}
+
+.welcome-container {
+    margin-top: 135px;
+}
+
+.welcome-body {
+    @include home-body-text;
+}
+
+.join-slack-button {
+    &:hover{
+        text-decoration: dotted;
+        background: #F1F1F1;
+        color: $darker-grey;
+    }
+    color: $darker-grey;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top:10px;
+    display: inline-block;
+}
+
+.welcome-events-activities {
+    text-align: center;
+    margin-top: 100px;
+    .header-span {
+        @include header-span;
+    }
+    p {
+        @include small-width(60%);
+        color: $darker-grey;
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 58px;
+    }
+}
+
+h1, h2, h3, h4, b {
+    font-weight: bold;
+}
+
+.gallery {
+  margin-top: 100px;
+  .first-grid {
+    div {
+        display: inline-block;
+        &:nth-child(4) {
+            max-width: 245px;
+        }
+        overflow: hidden;
+        margin: 2px;
+        &:first-child {
+            margin-left: 0px;
+        }
+    }
+     flex: 50%;
+     max-height: 305px;
+     img {
+         height: 305px;
+         border-radius: 5px;
+     }
+     align-items: stretch;
+ }
+
+ .second-grid {
+    flex: 50%;
+    margin-top:10px;
+    max-height: 305px;
+    border-radius: 5px;
+    img {
+        height: 305px;
+    }
+    div {
+        display: inline-block;
+        overflow: hidden;
+        margin: 2px;
+        &:first-child {
+            margin-left: 0px;
+        }
+        &:last-child {
+            width: 200px;
+        }
+    }
+ }
+
+}
+
+section {
+    margin-top: 100px;
+}
+ 
+.event-cards {
+     height: 360px;
+     display: inline-flex;
+ }
+
+ .event-card {
+     background: #E6EFFF;
+     padding: 40px 23px;
+     border-radius:4px;
+    span.day {
+        font-size: 78px;
+        display: block;
+        font-weight: bold;
+        line-height: 1;
+    }
+    
+    span.month {
+        font-weight: bold;
+         font-size: 18px;
+         text-transform: uppercase;
+    }
+
+    span.datetime {
+        display: block;
+        font-size: 16px;
+    }
+
+    span.location {
+
+    }
+
+    h3 {
+        font-size:24px;
+        margin-top:50px;
+    }
+ }
+
+ .more-events {
+    .small-heading{
+        font-size: 20px;
+        font-weight: 600;
+    }
+ }
+
+ .design-challenges {
+     span {
+         @include header-span;
+
+     }
+     margin-top: 100px;
+     .challenge-image {
+         height:550px;
+         width: calc(100% - 60px);
+         background: url(/images/design-challenge.jpg);
+         background-size: 100%;
+         border-radius: 5px;
+     }
+     h2 {
+         margin-top: 20px;
+         font-size: 50px;
+         line-height: 65px;
+     }
+     h3 {
+         font-size: 30px;
+         margin-top: 20px;
+     }
+     p {
+         margin: 20px auto;
+         font-size: 18px;
+         color: $darker-grey;
+         line-height: 28px;
+     }
+ }
+
+ .benefits {
+     p,ul {
+        color: $darker-grey;
+        font-size: 18px;
+        line-height: 28px;
+     }
+     p {
+         margin-top: 30px;
+     }
+     .image-div {
+         height: 650px;
+         max-width: 500px;
+         border-radius: 5px;
+         overflow: hidden;
+         img {
+             height: 100%;
+         }
+     }
+     h2 {
+         font-size: 60px;
+         margin-top: 20px;
+     }
+     span {
+         @include header-span;
+     }
+     li {
+        margin-top: 30px;
+        list-style-type: none;
+        &:before {
+            display: block;
+            content:  url(/images/Checkmark.svg);
+            margin-left: -30px;
+            float: left;
+            margin-top: 2px;
+        }
+     }
+
+ }

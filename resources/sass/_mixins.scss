@@ -1,0 +1,23 @@
+@mixin small-width($width: 78%) {
+    margin: auto;
+    text-align: center;
+    width: $width;
+}
+
+@mixin grey-large-text {
+    color: $darker-grey;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+}
+
+@mixin home-body-text {
+    @include small-width;
+    @include grey-large-text;
+}
+
+@mixin header-span {
+    color: $grey;
+    text-transform: uppercase;
+    font-weight: bold;
+}
