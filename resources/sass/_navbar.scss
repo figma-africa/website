@@ -13,22 +13,5 @@ nav.figma-nav {
         font-weight: bold;
     }
 
-    a:hover {
-        .fa-twitter {
-            color: #76A9EA !important;
-        }
-        .fa-dribbble {
-            color: #A6285F !important;
-        }
-        .fa-instagram {
-            background: linear-gradient(0deg, #E09B3D 0.29%, #C74C4D 29.97%, #C21975 59.65%, #7024C4 99.22%) !important;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: #ffffff !important;
-            border-radius: 4px;
-        }
-        .fa-medium-m {
-            color: #222222 !important;
-        }
-    }
+    @include nav-hover;
 }

@@ -1,3 +1,6 @@
+body {
+    letter-spacing: -0.02em;
+}
 h1 {
     &.welcome-header {
         font-weight: 600;
@@ -9,6 +12,10 @@ h1 {
         line-height: 65px;
         letter-spacing: -0.01em;
         text-align: center;
+        @media only screen and (max-width: 600px) {
+            font-size: 30px;
+            line-height: unset;
+        }
     }
 }
 
@@ -70,6 +77,7 @@ h1, h2, h3, h4, b {
         }
     }
      flex: 50%;
+     flex-wrap: wrap;
      max-height: 305px;
      img {
          height: 305px;
@@ -80,6 +88,7 @@ h1, h2, h3, h4, b {
 
  .second-grid {
     flex: 50%;
+    flex-wrap: wrap;
     margin-top:10px;
     max-height: 305px;
     border-radius: 5px;
@@ -216,4 +225,82 @@ section {
         }
      }
 
+ }
+
+ .communities {
+     padding: 150px 0;
+     background: #fafafa;
+     text-align: center;
+     h2 {
+         margin-top: 20px;
+         font-size: 60px;
+     }
+     span {
+         @include header-span;
+     }
+     p {
+         margin-top: 30px;
+         @include small-width(60%);
+     }
+
+     .flags-section {
+         margin-top: 60px;
+         // Components imported from bootstrap scss
+         @include make-container();
+         @include make-container-max-widths();
+         .row {
+             div {
+                 margin-top: 20px;
+                 text-align: left;
+                 font-weight: 600;
+             }
+             img {
+                 margin-right: 16px;
+             }
+         }
+
+        }
+         .start-figma-group {
+            display: inline-block; 
+            margin-top: 55px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            padding: 10px;
+            /* identical to box height, or 130% */
+            letter-spacing: -0.02em;
+            color: #333333;
+            &:hover{
+                text-decoration: dotted;
+                background: #F1F1F1;
+                color: $darker-grey;
+            }
+        }
+ }
+
+ .home-footer {
+    padding: 150px 0;
+ }
+
+ footer {
+     display: flex;
+     padding: 10px;
+     border-top: 1px solid $light-grey;
+
+     .nav {
+         li {
+             margin: 5px 20px;
+             a {
+                color: #222222;
+                font-size: 20px;
+                font-weight: 600;
+                span {
+                    font-weight: normal;
+                    color: $grey;
+                }
+             }
+
+             @include nav-hover;
+         }
+     }
  }

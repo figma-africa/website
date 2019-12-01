@@ -2,6 +2,10 @@
     margin: auto;
     text-align: center;
     width: $width;
+
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+    }
 }
 
 @mixin grey-large-text {
@@ -9,6 +13,10 @@
     font-size: 22px;
     line-height: 32px;
     letter-spacing: -0.02em;
+    @media only screen and (max-width: 600px) {
+        font-size: 16px;
+        line-height: unset;
+    }
 }
 
 @mixin home-body-text {
@@ -20,4 +28,25 @@
     color: $grey;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+@mixin nav-hover {
+    a:hover {
+        .fa-twitter {
+            color: #76A9EA !important;
+        }
+        .fa-dribbble {
+            color: #A6285F !important;
+        }
+        .fa-instagram {
+            background: linear-gradient(0deg, #E09B3D 0.29%, #C74C4D 29.97%, #C21975 59.65%, #7024C4 99.22%) !important;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: #ffffff !important;
+            border-radius: 4px;
+        }
+        .fa-medium-m {
+            color: #222222 !important;
+        }
+    }
 }

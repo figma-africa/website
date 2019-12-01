@@ -15580,6 +15580,10 @@ nav.figma-nav a:hover .fa-medium-m {
   color: #222222 !important;
 }
 
+body {
+  letter-spacing: -0.02em;
+}
+
 h1.welcome-header {
   font-weight: 600;
   font-size: 55px;
@@ -15590,6 +15594,13 @@ h1.welcome-header {
   line-height: 65px;
   letter-spacing: -0.01em;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  h1.welcome-header {
+    font-size: 30px;
+    line-height: unset;
+  }
 }
 
 .welcome-container {
@@ -15604,6 +15615,19 @@ h1.welcome-header {
   font-size: 22px;
   line-height: 32px;
   letter-spacing: -0.02em;
+}
+
+@media only screen and (max-width: 600px) {
+  .welcome-body {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .welcome-body {
+    font-size: 16px;
+    line-height: unset;
+  }
 }
 
 .join-slack-button {
@@ -15641,6 +15665,12 @@ h1.welcome-header {
   font-size: 18px;
 }
 
+@media only screen and (max-width: 600px) {
+  .welcome-events-activities p {
+    width: 100%;
+  }
+}
+
 .welcome-events-activities h2 {
   font-size: 58px;
 }
@@ -15660,6 +15690,7 @@ b {
 .gallery .first-grid {
   -webkit-box-flex: 50%;
           flex: 50%;
+  flex-wrap: wrap;
   max-height: 305px;
   -webkit-box-align: stretch;
           align-items: stretch;
@@ -15687,6 +15718,7 @@ b {
 .gallery .second-grid {
   -webkit-box-flex: 50%;
           flex: 50%;
+  flex-wrap: wrap;
   margin-top: 10px;
   max-height: 305px;
   border-radius: 5px;
@@ -15834,5 +15866,144 @@ section {
   margin-left: -30px;
   float: left;
   margin-top: 2px;
+}
+
+.communities {
+  padding: 150px 0;
+  background: #fafafa;
+  text-align: center;
+}
+
+.communities h2 {
+  margin-top: 20px;
+  font-size: 60px;
+}
+
+.communities span {
+  color: #828282;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.communities p {
+  margin-top: 30px;
+  margin: auto;
+  text-align: center;
+  width: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+  .communities p {
+    width: 100%;
+  }
+}
+
+.communities .flags-section {
+  margin-top: 60px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .communities .flags-section {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .communities .flags-section {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .communities .flags-section {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .communities .flags-section {
+    max-width: 1140px;
+  }
+}
+
+.communities .flags-section .row div {
+  margin-top: 20px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.communities .flags-section .row img {
+  margin-right: 16px;
+}
+
+.communities .start-figma-group {
+  display: inline-block;
+  margin-top: 55px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 10px;
+  /* identical to box height, or 130% */
+  letter-spacing: -0.02em;
+  color: #333333;
+}
+
+.communities .start-figma-group:hover {
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+  background: #F1F1F1;
+  color: #424242;
+}
+
+.home-footer {
+  padding: 150px 0;
+}
+
+footer {
+  display: -webkit-box;
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+footer .nav li {
+  margin: 5px 20px;
+}
+
+footer .nav li a {
+  color: #222222;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer .nav li a span {
+  font-weight: normal;
+  color: #828282;
+}
+
+footer .nav li a:hover .fa-twitter {
+  color: #76A9EA !important;
+}
+
+footer .nav li a:hover .fa-dribbble {
+  color: #A6285F !important;
+}
+
+footer .nav li a:hover .fa-instagram {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.29%, #E09B3D), color-stop(29.97%, #C74C4D), color-stop(59.65%, #C21975), color-stop(99.22%, #7024C4)) !important;
+  background: linear-gradient(0deg, #E09B3D 0.29%, #C74C4D 29.97%, #C21975 59.65%, #7024C4 99.22%) !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff !important;
+  border-radius: 4px;
+}
+
+footer .nav li a:hover .fa-medium-m {
+  color: #222222 !important;
 }
 
