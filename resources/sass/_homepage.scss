@@ -12,7 +12,7 @@ h1 {
         line-height: 65px;
         letter-spacing: -0.01em;
         text-align: center;
-        @media only screen and (max-width: 600px) {
+        @include for-phone-only {
             font-size: 30px;
             line-height: unset;
         }
@@ -43,7 +43,7 @@ h1 {
 
 .welcome-events-activities {
     text-align: center;
-    margin-top: 100px;
+    @include section-margin;
     .header-span {
         @include header-span;
     }
@@ -63,7 +63,9 @@ h1, h2, h3, h4, b {
 }
 
 .gallery {
-  margin-top: 100px;
+  @include section-margin;
+  max-width: 1400px;
+  margin: auto;
   .first-grid {
     div {
         display: inline-block;
@@ -84,18 +86,32 @@ h1, h2, h3, h4, b {
          border-radius: 5px;
      }
      align-items: stretch;
+     @include for-phone-only {
+        div {
+            margin: 0;
+            img {
+                height: 100%;
+            }
+            width: 32.33%;
+            overflow: hidden;
+            height: 200px;
+            &:nth-child(4), &:nth-child(5) {
+                display: none;
+            }
+        }
+    }
  }
 
  .second-grid {
     flex: 50%;
     flex-wrap: wrap;
     margin-top:10px;
-    max-height: 305px;
-    border-radius: 5px;
     img {
         height: 305px;
     }
     div {
+        max-height: 305px;
+        border-radius: 5px;
         display: inline-block;
         overflow: hidden;
         margin: 2px;
@@ -106,16 +122,30 @@ h1, h2, h3, h4, b {
             width: 200px;
         }
     }
+    @include for-phone-only {
+        margin-top: 0px;
+        div {
+            width: 48%;
+            overflow: hidden;
+            height: 200px;
+            &:nth-child(1), &:nth-child(2) {
+                display: none;
+            }
+            img {
+                height: 100%;
+            }
+        }
+    }
  }
 
 }
 
 section {
-    margin-top: 100px;
+    @include section-margin;
 }
  
 .event-cards {
-     height: 360px;
+     min-height: 360px;
      display: inline-flex;
  }
 
@@ -123,6 +153,7 @@ section {
      background: #E6EFFF;
      padding: 40px 23px;
      border-radius:4px;
+     height: 360px;
     span.day {
         font-size: 78px;
         display: block;
@@ -141,10 +172,6 @@ section {
         font-size: 16px;
     }
 
-    span.location {
-
-    }
-
     h3 {
         font-size:24px;
         margin-top:50px;
@@ -161,15 +188,46 @@ section {
  .design-challenges {
      span {
          @include header-span;
+         @include for-phone-only {
+             display: block;
+             margin-top: 100px;
+         }
 
      }
-     margin-top: 100px;
+
+     .header-sm-up {
+        @include for-phone-only {
+            display: none;
+        }
+
+    }
+    .header-xs {
+         @include for-tablet-portrait-up {
+             display: none;
+         }
+         h2 {
+             width: 70%;
+             line-height: 1.2;
+             margin: 15px auto;
+         }
+     }
+
+     @include section-margin;
      .challenge-image {
          height:550px;
          width: calc(100% - 60px);
-         background: url(/images/design-challenge.jpg);
          background-size: 100%;
          border-radius: 5px;
+         overflow: hidden;
+         img {
+             width: 100%;
+         }
+
+         @include for-phone-only {
+             width: 100%;
+             border-radius: 0;
+             margin-top: 50px;
+         }
      }
      h2 {
          margin-top: 20px;
@@ -185,6 +243,9 @@ section {
          font-size: 18px;
          color: $darker-grey;
          line-height: 28px;
+         @include for-phone-only {
+             margin-top: 50px;
+         }
      }
  }
 
@@ -213,6 +274,22 @@ section {
      span {
          @include header-span;
      }
+     @include for-phone-only {
+         h2, span {
+            display: block;
+            text-align: center;
+         }
+         margin-top: 100px;
+         .text-for-sm {
+             display: none;
+         }
+     }
+
+     @include for-tablet-portrait-up {
+         .text-for-xs {
+             display: none;
+         }
+     }
      li {
         margin-top: 30px;
         list-style-type: none;
@@ -224,7 +301,16 @@ section {
             margin-top: 2px;
         }
      }
-
+    .btn.btn-link {
+        color: $darker-grey;
+        font-weight: 600;
+        font-size: 20px;
+        &:hover {
+            text-decoration: dotted;
+            background: #F1F1F1;
+            color: $darker-grey;
+        }
+    }
  }
 
  .communities {
@@ -234,13 +320,25 @@ section {
      h2 {
          margin-top: 20px;
          font-size: 60px;
+         @include for-phone-only {
+             font-size: 30px;
+             margin-bottom: 20px;
+         }
      }
      span {
          @include header-span;
      }
      p {
-         margin-top: 30px;
          @include small-width(60%);
+     }
+
+     @include for-phone-only {
+         padding: 100px 0;
+         p {
+             color: $grey;
+             width: 93%;
+             margin: auto;
+         }
      }
 
      .flags-section {
@@ -267,7 +365,6 @@ section {
             font-size: 20px;
             line-height: 26px;
             padding: 10px;
-            /* identical to box height, or 130% */
             letter-spacing: -0.02em;
             color: #333333;
             &:hover{
@@ -290,17 +387,133 @@ section {
      .nav {
          li {
              margin: 5px 20px;
+             @include for-phone-only {
+                span {
+                    display: none;
+                }
+            }
              a {
                 color: #222222;
                 font-size: 20px;
                 font-weight: 600;
-                span {
+                span.fab {
                     font-weight: normal;
                     color: $grey;
+                    display: inline-block;
                 }
              }
 
              @include nav-hover;
          }
+     }
+ }
+
+ section.join-us {
+     h2 {
+         font-size: 60px;
+         font-weight: bold;
+     }
+     display: flex;
+     align-items: center;
+     position: relative;
+     @include for-phone-only {
+         display: block;
+    }
+    @include for-tablet-portrait-to-desktop {
+        display: block;
+   }
+        .join-us {
+            position: absolute;
+            flex-shrink: 0;
+            width: 46%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left:-50px;
+            @include for-phone-only {
+                position: relative;
+                margin: 0 auto;
+                width: 100%;
+                text-align: center;
+            }
+
+            @include for-tablet-portrait-to-desktop {
+                position: relative;
+                margin: 0 auto;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .image-div {
+            flex-shrink: 0;
+            width: 557px;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+            margin-left: 30%;
+            @include for-phone-only {
+                display: inline;
+                margin: 0;
+                width: 70%;
+                img {
+                    width: 70%;
+                }
+            }
+            @include for-tablet-portrait-to-desktop {
+                display: inline;
+                margin: 0;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .image-div-smaller {
+            flex-shrink: 0;
+            height: 264px;
+            width: 391px;
+            margin-left: -100px;
+            img {
+                width: 100%;
+                border-radius: 5px;
+                box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.06);
+            }
+            @include for-phone-only {
+                display: inline;
+                img {
+                    width: 50%;
+                }
+            }
+            @include for-tablet-portrait-to-desktop {
+                display: inline;
+                float: right;
+                margin:0;
+                display: none;
+                margin-top: -100px;
+                img {
+                    width: 50%;
+                }
+            }
+        }
+        span {
+            @include header-span;
+        }
+        padding: 0px 20px;
+        padding-bottom: 150px;
+        @include make-container;
+        @include make-container-max-widths;
+        @include for-phone-only {
+            padding-bottom: 50px;
+        }
+ }
+
+ @include for-phone-only {
+     h2 {
+         font-size: 30px !important;
+     }
+     h3 {
+         font-size: 18px !important;
      }
  }

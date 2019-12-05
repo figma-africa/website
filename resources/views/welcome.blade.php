@@ -32,10 +32,10 @@
 
         <section class="gallery">
             <div class="first-grid">
-                <div class="col-xs-6">
+                <div>
                     <img src="/images/home-image-1.jpg" alt="Figma africa gallery image" />
                 </div>
-                <div class="col-xs-6">
+                <div>
                     <img src="/images/home-image-2.jpg" alt="Figma africa gallery image" />
                 </div>
                 <div>
@@ -71,9 +71,9 @@
                 <p>Our events and activities are designed to enhance learning and understanding of design while bringing together members in the community into a physical or virtual space for them to connect and network.</p>
             </section>
 
-            <section class="event-cards mb-5 row">
+            <section class="event-cards row">
                 @for($i = 0; $i < 4; $i++)
-                <a class="event-card col m-3">
+                <a class="event-card col-sm m-3">
                     <span class="day">
                         14
                     </span>
@@ -100,18 +100,28 @@
 
                 <div class="design-challenges">
                     <div class="row">
-                        <div class="col">
-                            <div class="challenge-image">
-
-                            </div>
-                        </div>
-                        <div class="col">
+                        <div class="col-sm p-0 p-sm-2">
+                            <div class="header-xs text-center">
                                 <span>CREATIVE COMPETITIONS</span>
                                 <h2>
-                                        Weekly Design
-                                        Challenges
+                                    Weekly Design
+                                    Challenges
                                 </h2>
                                 <h3>Design of Physical Products</h3>
+                            </div>
+                            <div class="challenge-image">
+                                <img src="/images/design-challenge.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="header-sm-up">
+                                <span>CREATIVE COMPETITIONS</span>
+                                <h2>
+                                    Weekly Design
+                                    Challenges
+                                </h2>
+                                <h3>Design of Physical Products</h3>
+                            </div>
                                 <p>
                                         Our design challenge is held on a weekly basis and it is designed to enable people explore design concepts in a manner which pushes our creativity, challenges our exposure while offering competition in a positive approach.
                                         <br />&nbsp; <br />
@@ -125,34 +135,56 @@
 
             <section class="benefits">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-sm">
                         <span>Values and benefits</span>
                         
                         <h2>Scale your career</h2>
                         
-                        <p>Our mission is to make design accessible to everyone — by 
-                            creating pathways for anyone to become a designer or participate in the design 
-                            process collaboratively.
-                        </p>
-                        
-                        <ul>
-                            <li>
-                                We offer a free, self-paced design learning program that comes with a well curated curriculum and weekly activities.
-                            </li>
-                            <li>
-                                Become a digital hub for designers everything related to design in Africa as we will continue to help designers scale their careers.
-                            </li>
-                            <li>
-                                Boost the African design ecosystem by connecting companies to designers and vice versa.
-                            </li>
-                        </ul>
+                        <div class="text-for-sm">
+                            <p>Our mission is to make design accessible to everyone — by 
+                                creating pathways for anyone to become a designer or participate in the design 
+                                process collaboratively.
+                            </p>
+                            
+                            <ul>
+                                <li>
+                                    We offer a free, self-paced design learning program that comes with a well curated curriculum and weekly activities.
+                                </li>
+                                <li>
+                                    Become a digital hub for designers everything related to design in Africa as we will continue to help designers scale their careers.
+                                </li>
+                                <li>
+                                    Boost the African design ecosystem by connecting companies to designers and vice versa.
+                                </li>
+                            </ul>
+                            <button class="btn btn-link">Get Started &raquo;</button>
+                        </div>
 
-                        <button class="btn btn-link">Get Started &raquo;</button>
                     </div>
 
-                    <div class="col">
+                    <div class="col-sm">
                         <div class="image-div">
                             <img src="/images/figma-africa-class.jpg" alt="">
+                        </div>
+
+                        <div class="text-for-xs">
+                            <p>Our mission is to make design accessible to everyone — by 
+                                creating pathways for anyone to become a designer or participate in the design 
+                                process collaboratively.
+                            </p>
+                            
+                            <ul>
+                                <li>
+                                    We offer a free, self-paced design learning program that comes with a well curated curriculum and weekly activities.
+                                </li>
+                                <li>
+                                    Become a digital hub for designers everything related to design in Africa as we will continue to help designers scale their careers.
+                                </li>
+                                <li>
+                                    Boost the African design ecosystem by connecting companies to designers and vice versa.
+                                </li>
+                            </ul>
+                            <button class="btn btn-link">Get Started &raquo;</button>
                         </div>
                     </div>
                         
@@ -171,50 +203,50 @@
 
             <div class="flags-section">
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 col-sm-4">
                         <img src="/images/flags/Ghana.svg" alt=""> Accra, Ghana
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 col-sm-4">
                         <img src="/images/flags/Nigeria.svg" alt=""> Osun, Nigeria
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 col-sm-4">
                         <img src="/images/flags/Rwanda.svg" alt=""> Kigali, Rwanda
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 col-sm-4">
                         <img src="/images/flags/Nigeria.svg" alt=""> Uyo, Nigeria
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 col-sm-4">
                         <img src="/images/flags/Nigeria.svg" alt=""> Lagos, Nigeria
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 col-sm-4">
                         <img src="/images/flags/Nigeria.svg" alt=""> Niger, Nigeria
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 col-sm-4">
                         <img src="/images/flags/Kenya.svg" alt=""> Nairobi, Kenya
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 col-sm-4">
                         <img src="/images/flags/Nigeria.svg" alt=""> Abuja, Nigeria
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 col-sm-4">
                         <img src="/images/flags/Morocco.svg" alt=""> Casablanca, Morocco
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 col-sm-4">
                         <img src="/images/flags/Nigeria.svg" alt=""> Kwara, Nigeria
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 col-sm-4">
                         <img src="/images/flags/Nigeria.svg" alt=""> Umuahia, Nigeria
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 col-sm-4">
                         <img src="/images/flags/Nigeria.svg" alt=""> Enugu, Nigeria
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 col-sm-4">
                         <img src="/images/flags/Benin.svg" alt=""> Cotonou, Benin Republic
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 col-sm-4">
                         <img src="/images/flags/Nigeria.svg" alt=""> Kaduna, Nigeria
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 col-sm-4">
                         <img src="/images/flags/Congo.svg" alt=""> Kinshasa, Congo
                     </div>
                 </div>
@@ -224,21 +256,35 @@
             </a>
         </section>
         <section class="join-us">
-
+            <div class="join-us">
+                <div>
+                    <span>Grow your tech ecosystem</span>
+                    <h2>Join us in growing the Ecosystem.</h2>
+                    <p>
+                        <a href="{{env('SLACK_IV_LINK')}}" class="join-slack-button" target="blank"> <img src="/images/slack_logo.svg" alt="" srcset=""> Join us on Slack</a>
+                    </p>
+                </div>
+            </div>
+            <div class="image-div">
+                <img src="/images/bg.jpg" alt="Figma africa meetup photos" />
+            </div>
+            <div class="image-div-smaller">
+                <img src="/images/footer-image.jpg" alt="Figma africa smiling people" />
+            </div>
         </section>
         <footer>
             <ul class="nav nav-pills m-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="fab fa-twitter"></span> Twitter</a>
+                    <a class="nav-link" href="#"><span class="fab fa-twitter"></span> <span>Twitter</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="fab fa-dribbble"></span> Dribbble</a>
+                    <a class="nav-link" href="#"><span class="fab fa-dribbble"></span> <span>Dribbble</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="fab fa-instagram"></span> Instagram</a>
+                    <a class="nav-link" href="#"><span class="fab fa-instagram"></span> <span>Instagram</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="fab fa-medium-m"></span> Medium</a>
+                    <a class="nav-link" href="#"><span class="fab fa-medium-m"></span> <span>Medium</span></a>
                 </li>
             </ul>
         </footer>
