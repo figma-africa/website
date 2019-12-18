@@ -1,4 +1,4 @@
-@mixin small-width($width: 78%) {
+@mixin small-width($width: 83%) {
     margin: auto;
     text-align: center;
     width: $width;
@@ -74,5 +74,11 @@
     margin-top: 100px;
     @include for-phone-only {
         margin-top: 50px;
+    }
+}
+
+@mixin medium-screens() {
+    @media only screen and (max-width: 991px) {
+        @content;
     }
 }
