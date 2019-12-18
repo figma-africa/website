@@ -28,5 +28,6 @@ class AppServiceProvider extends ServiceProvider
         Blade::component('layouts.components.ourCommunity', 'ourCommunity');
         Blade::component('layouts.components.ecoSystem', 'ecoSystem');
         Blade::component('layouts.components.gridImageGallery', 'gridImageGallery');
+        Blade::component('layouts.components.flexImageGallery', 'flexImageGallery');
     }
 }

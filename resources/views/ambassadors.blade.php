@@ -27,6 +27,8 @@
             </section>
         </div>
         {{-- Image Gallery begins here --}}
+        {{-- @flexImageGallery
+        @endflexImageGallery --}}
         @gridImageGallery
         @endgridImageGallery
         {{-- Image Gallery ends here --}}

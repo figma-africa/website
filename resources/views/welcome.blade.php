@@ -29,41 +29,9 @@
                 <a href="{{env('SLACK_IV_LINK')}}" class="join-slack-button" target="blank"> <img src="/images/slack_logo.svg" alt="" srcset=""> Join us on Slack</a>
             </section>
         </div>
-
-        <!-- <section class="gallery">
-            <div class="first-grid">
-                <div>
-                    <img src="/images/home-image-1.jpg" alt="Figma africa gallery image" />
-                </div>
-                <div>
-                    <img src="/images/home-image-2.jpg" alt="Figma africa gallery image" />
-                </div>
-                <div>
-                    <img src="/images/home-image-3.jpg" alt="Figma africa gallery image" />
-                </div>
-                <div>
-                    <img src="/images/home-image-4.jpg" alt="Figma africa gallery image" />
-                </div>
-                <div>
-                    <img src="/images/home-image-5.jpg" alt="Figma africa gallery image" />
-                </div>
-            </div>
-            <div class="second-grid">
-                <div>
-                    <img src="/images/home-image-6.jpg" alt="Figma africa gallery image" />
-                </div>
-                <div>
-                    <img src="/images/home-image-7.jpg" alt="Figma africa gallery image" />
-                </div>
-                <div>
-                    <img src="/images/home-image-8.jpg" alt="Figma africa gallery image" />
-                </div>
-                <div>
-                    <img src="/images/home-image-9.jpg" alt="Figma africa gallery image" />
-                </div>
-            </div>
-        </section> -->
         {{-- Image Gallery begins here --}}
+        {{-- @flexImageGallery
+        @endflexImageGallery --}}
         @gridImageGallery
         @endgridImageGallery
         {{-- Image Gallery ends here --}}
