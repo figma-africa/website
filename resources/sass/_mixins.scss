@@ -1,3 +1,30 @@
+
+@mixin small-width($width: 83%) {
+    margin: auto;
+    text-align: center;
+    width: $width;
+
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+@mixin grey-large-text {
+    color: $darker-grey;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    @media only screen and (max-width: 600px) {
+        font-size: 16px;
+        line-height: unset;
+    }
+}
+
+@mixin home-body-text {
+    @include small-width;
+    @include grey-large-text;
+}
+
 @mixin header-span {
     color: $grey;
     text-transform: uppercase;
@@ -49,6 +76,13 @@
     margin-top: 100px;
     @include for-phone-only {
         margin-top: 50px;
+    }
+}
+
+
+@mixin medium-screens() {
+    @media only screen and (max-width: 991px) {
+        @content;
     }
 }
 
