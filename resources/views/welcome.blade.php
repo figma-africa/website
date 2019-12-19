@@ -61,8 +61,110 @@
                 </a>
                 @endfor
             </section>
+
             @include('partials/moreEvents')
             @include('partials/scaleCareer')
+
+            <section class="more-events">
+                <div class="text-center">
+                    <span class="small-heading">
+                        More Events & Activities
+                    </span>
+                </div>
+
+                <div class="design-challenges">
+                    <div class="row">
+                        <div class="col-sm p-0 p-sm-2">
+                            <div class="header-xs text-center">
+                                <span>CREATIVE COMPETITIONS</span>
+                                <h2>
+                                    Weekly Design
+                                    Challenges
+                                </h2>
+                                <h3>Design of Physical Products</h3>
+                            </div>
+                            <div class="challenge-image">
+                                <img src="/images/design-challenge.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="header-sm-up">
+                                <span>CREATIVE COMPETITIONS</span>
+                                <h2>
+                                    Weekly Design
+                                    Challenges
+                                </h2>
+                                <h3>Design of Physical Products</h3>
+                            </div>
+                                <p>
+                                        Our design challenge is held on a weekly basis and it is designed to enable people explore design concepts in a manner which pushes our creativity, challenges our exposure while offering competition in a positive approach.
+                                        <br />&nbsp; <br />
+                                        Submissions are voted and the winning entry gets a prize as well as promotion on all of our platforms. 
+                                </p>
+                                <a href="#">View all entries &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="benefits">
+                <div class="row">
+                    <div class="col-lg">
+                        <span>Values and benefits</span>
+                        
+                        <h2>Scale your career</h2>
+                        
+                        <div class="text-for-sm">
+                            <p>Our mission is to make design accessible to everyone — by 
+                                creating pathways for anyone to become a designer or participate in the design 
+                                process collaboratively.
+                            </p>
+                            
+                            <ul>
+                                <li>
+                                    We offer a free, self-paced design learning program that comes with a well curated curriculum and weekly activities.
+                                </li>
+                                <li>
+                                    Become a digital hub for designers everything related to design in Africa as we will continue to help designers scale their careers.
+                                </li>
+                                <li>
+                                    Boost the African design ecosystem by connecting companies to designers and vice versa.
+                                </li>
+                            </ul>
+                            <button class="btn btn-link">Get Started &raquo;</button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg d-sm-none d-lg-block">
+                        <div class="image-div">
+                            <img src="/images/figma-africa-class.jpg" alt="">
+                        </div>
+
+                        <div class="text-for-xs">
+                            <p>Our mission is to make design accessible to everyone — by 
+                                creating pathways for anyone to become a designer or participate in the design 
+                                process collaboratively.
+                            </p>
+                            
+                            <ul>
+                                <li>
+                                    We offer a free, self-paced design learning program that comes with a well curated curriculum and weekly activities.
+                                </li>
+                                <li>
+                                    Become a digital hub for designers everything related to design in Africa as we will continue to help designers scale their careers.
+                                </li>
+                                <li>
+                                    Boost the African design ecosystem by connecting companies to designers and vice versa.
+                                </li>
+                            </ul>
+                            <button class="btn btn-link">Get Started &raquo;</button>
+                        </div>
+                    </div>
+                        
+                    </div>
+            </section>
+
         </div>
         {{-- Our community begins here --}}
         @ourCommunity

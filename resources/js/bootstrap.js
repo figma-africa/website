@@ -9,3 +9,5 @@ document.addEventListener('scroll', () => {
     $('.figma-nav').removeClass('shadow-sm');
   }
 });
+
+// Wow Js.

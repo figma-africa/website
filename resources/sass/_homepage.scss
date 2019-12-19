@@ -1,10 +1,11 @@
 body {
     letter-spacing: -0.02em;
+    @include body-text;
 }
 h1 {
     &.welcome-header {
         font-weight: 600;
-        font-size: 55px;
+        @include header-font;
         width: 60%;
         min-width: 300px;
         max-width: 700px;
@@ -58,11 +59,11 @@ h1 {
     p {
         @include small-width(60%);
         color: $darker-grey;
-        font-size: 18px;
+        @include body-text;
     }
 
     h2 {
-        font-size: 58px;
+        @include header-font;
     }
 }
 
@@ -237,7 +238,7 @@ section {
     
     span.month {
         font-weight: bold;
-         font-size: 18px;
+         @include body-text;
          text-transform: uppercase;
     }
 
@@ -314,16 +315,19 @@ section {
      }
      h2 {
          margin-top: 20px;
-         font-size: 50px;
+         @include header-font;
          line-height: 65px;
      }
      h3 {
          font-size: 30px;
          margin-top: 20px;
+         @include for-phone-only{
+             font-size: 22px;
+         }
      }
      p {
          margin: 20px auto;
-         font-size: 18px;
+         @include body-text;
          color: $darker-grey;
          line-height: 28px;
          @include for-phone-only {
@@ -335,7 +339,7 @@ section {
  .benefits {
      p,ul {
         color: $darker-grey;
-        font-size: 18px;
+        @include body-text;
         line-height: 28px;
      }
      p {
@@ -351,7 +355,7 @@ section {
          }
      }
      h2 {
-         font-size: 60px;
+         @include header-font;
          margin-top: 20px;
      }
      span {
@@ -402,7 +406,7 @@ section {
      text-align: center;
      h2 {
          margin-top: 20px;
-         font-size: 60px;
+         @include header-font;
          @include for-phone-only {
              font-size: 30px;
              margin-bottom: 20px;
@@ -426,6 +430,7 @@ section {
 
      .flags-section {
          margin-top: 60px;
+         font-size: 1rem;
          // Components imported from bootstrap scss
          @include make-container();
          @include make-container-max-widths();
@@ -497,7 +502,7 @@ section {
 
  section.join-us {
      h2 {
-         font-size: 60px;
+         @include header-font;
          font-weight: bold;
      }
      display: flex;

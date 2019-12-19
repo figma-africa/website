@@ -1,3 +1,4 @@
+
 @mixin small-width($width: 83%) {
     margin: auto;
     text-align: center;
@@ -39,7 +40,8 @@
             color: #A6285F !important;
         }
         .fa-instagram {
-            background: linear-gradient(0deg, #E09B3D 0.29%, #C74C4D 29.97%, #C21975 59.65%, #7024C4 99.22%) !important;
+            background: linear-gradient(0deg, #E09B3D 0.29%, 
+            #C74C4D 29.97%, #C21975 59.65%, #7024C4 99.22%) !important;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: #ffffff !important;
@@ -77,8 +79,63 @@
     }
 }
 
+
 @mixin medium-screens() {
     @media only screen and (max-width: 991px) {
         @content;
     }
 }
+
+
+@mixin header-font {
+    @include for-phone-only {
+        font-size: 30px;
+        line-height: unset;
+    }
+    @include for-tablet-portrait-up() {
+        font-size: 40px;
+        line-height: unset;
+    }
+    @include for-tablet-landscape-up {
+        font-size: 60px;
+    }
+}
+
+@mixin body-text {
+    font-size: calc(16px + 2 * ((100vw - 360px) / 768));
+    @include for-tablet-portrait-up {
+        font-size: calc(15px + 10 * ((100vw - 769px) / 2048));
+    }
+}
+
+@mixin small-width($width: 78%) {
+    margin: auto;
+    text-align: center;
+    width: $width;
+
+    @include for-phone-only {
+        width: 100%;
+    }
+}
+
+@mixin grey-large-text {
+    color: $darker-grey;
+    letter-spacing: -0.02em;
+    @include for-phone-only {
+        font-size: 16px;
+        line-height: unset;
+    }
+    @include for-tablet-portrait-up {
+        font-size: 18px;
+    }
+    @include for-tablet-landscape-up {
+        line-height: 32px;
+        font-size: 22px;
+    }
+}
+
+@mixin home-body-text {
+    @include small-width;
+    @include grey-large-text;
+}
+
