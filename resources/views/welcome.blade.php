@@ -135,7 +135,7 @@
 
             <section class="benefits">
                 <div class="row">
-                    <div class="col-sm">
+                    <div class="col-lg">
                         <span>Values and benefits</span>
                         
                         <h2>Scale your career</h2>
@@ -162,7 +162,7 @@
 
                     </div>
 
-                    <div class="col-sm">
+                    <div class="col-lg d-sm-none d-lg-block">
                         <div class="image-div">
                             <img src="/images/figma-africa-class.jpg" alt="">
                         </div>

@@ -17830,7 +17830,7 @@ document.addEventListener('scroll', function () {
   } else {
     $('.figma-nav').removeClass('shadow-sm');
   }
-});
+}); // Wow Js.
 
 /***/ }),
 
