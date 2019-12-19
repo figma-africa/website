@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light figma-nav fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
                 <svg width="15" height="22" viewBox="0 0 15 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.5 4C0.5 2.067 2.067 0.5 4 0.5H7.5V7.5H4C2.067 7.5 0.5 5.933 0.5 4Z" stroke="#828282"/>
                     <path d="M0.5 11C0.5 9.067 2.067 7.5 4 7.5H7.5V14.5H4C2.067 14.5 0.5 12.933 0.5 11Z" stroke="#828282"/>
@@ -16,16 +16,16 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="fab fa-twitter"></span> Twitter</a>
+                    <a class="nav-link" href="{{env('FIGMA_TWITTER')}}"><span class="fab fa-twitter"></span> Twitter</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="fab fa-dribbble"></span> Dribbble</a>
+                    <a class="nav-link" href="{{env('FIGMA_DRIBBBLE')}}"><span class="fab fa-dribbble"></span> Dribbble</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="fab fa-instagram"></span> Instagram</a>
+                    <a class="nav-link" href="{{env('FIGMA_INSTAGRAM')}}"><span class="fab fa-instagram"></span> Instagram</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="fab fa-medium-m"></span> Medium</a>
+                    <a class="nav-link" href="{{env('FIGMA_MEDIUM')}}"><span class="fab fa-medium-m"></span> Medium</a>
                 </li>
             </ul>
         </div>

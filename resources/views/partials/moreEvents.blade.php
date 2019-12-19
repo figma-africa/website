@@ -1,11 +1,5 @@
 <section class="more-events">
-    <div class="text-center">
-        <span class="small-heading">
-            More Events & Activities
-        </span>
-    </div>
-
-    <div class="design-challenges">
+    <div class="design-challenges container">
         <div class="row">
             <div class="col-sm p-0 p-sm-2">
                 <div class="header-xs text-center">

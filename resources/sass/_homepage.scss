@@ -22,6 +22,7 @@ h1 {
 
 .welcome-container {
     margin-top: 135px;
+    margin-bottom: 100px;
 }
 
 .welcome-body {
@@ -36,16 +37,11 @@ h1 {
 }
 
 .join-slack-button {
-    &:hover{
-        text-decoration: dotted;
-        background: #F1F1F1;
-        color: $darker-grey;
-    }
-    color: $darker-grey;
+    @include button-hover;
+    color: $black;
     font-weight: bold;
     padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 3rem;
+    @include b-radius;
     display: inline-block;
     transition: .3s ease-in-out;
 }
@@ -73,7 +69,8 @@ h1, h2, h3, h4, b {
 
 .gallery-flex {
   @include section-margin;
-//   max-width: 1400px;
+  width: 100%;
+  overflow: hidden;
   margin: auto;
   .first-grid {
     div {
@@ -122,7 +119,7 @@ h1, h2, h3, h4, b {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 5px;
+        @include b-radius();
      }
      align-items: stretch;
      @include for-phone-only {
@@ -149,11 +146,11 @@ h1, h2, h3, h4, b {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 5px;
+        @include b-radius();
     }
     div {
         // max-height: 305px;
-        // border-radius: 5px;
+        // @include b-radius();
         // display: inline-block;
         // overflow: hidden;
         // margin: 2px;
@@ -221,13 +218,12 @@ section {
  
 .event-cards {
      min-height: 360px;
-     display: inline-flex;
  }
 
  .event-card {
      background: #E6EFFF;
      padding: 40px 23px;
-     border-radius:4px;
+     @include b-radius();
      height: 360px;
     span.day {
         font-size: 78px;
@@ -263,9 +259,14 @@ section {
  }
 
  .more-events {
-    .small-heading{
+     margin-top:40px;
+     .small-heading{
+         @include button-hover;
+        padding:10px;
+        @include b-radius;
         font-size: 20px;
         font-weight: 600;
+        color: $black;
     }
  }
 
@@ -301,7 +302,7 @@ section {
          height:550px;
          width: calc(100% - 60px);
          background-size: 100%;
-         border-radius: 5px;
+         @include b-radius();
          overflow: hidden;
          img {
              width: 100%;
@@ -345,10 +346,13 @@ section {
      p {
          margin-top: 30px;
      }
+     ul {
+        padding-inline-start: 25px;
+     }
      .image-div {
          height: 650px;
          max-width: 500px;
-         border-radius: 5px;
+         @include b-radius();
          overflow: hidden;
          img {
              height: 100%;
@@ -456,11 +460,8 @@ section {
             letter-spacing: -0.02em;
             color: #333333;
             transition: .3s ease-in-out;
-            &:hover{
-                text-decoration: dotted;
-                background: #F1F1F1;
-                color: $darker-grey;
-            }
+            @include button-hover;
+            @include b-radius;
         }
  }
 
@@ -517,7 +518,7 @@ section {
         .join-us {
             position: absolute;
             flex-shrink: 0;
-            width: 46%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -569,7 +570,7 @@ section {
             margin-left: -100px;
             img {
                 width: 100%;
-                border-radius: 5px;
+                @include b-radius();
                 box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.06);
             }
             @include for-phone-only {
@@ -596,6 +597,9 @@ section {
         padding-bottom: 150px;
         @include make-container;
         @include make-container-max-widths;
+        @include for-tablet-portrait-up {
+            max-width: 1100px;
+        }
         @include for-phone-only {
             padding-bottom: 50px;
         }
@@ -630,50 +634,50 @@ section {
       &:nth-child(#{$size}n + 1) {
         grid-column: span 2;
         grid-row: span 3;
-        border-radius: 4px;
+        @include b-radius;
       }
       &:nth-child(2) {
         grid-column: span 1;
         grid-row: span 3;
-        border-radius: 4px;
+        @include b-radius;
       }
       &:nth-child(3) {
         grid-column: span 1;
         grid-row: span 3;
-        border-radius: 4px;
+        @include b-radius;
       }
       &:nth-child(4) {
         grid-column: span 1;
         grid-row: span 3;
-        border-radius: 4px;
+        @include b-radius;
         @include medium-screens { display: none; }
       }
       &:nth-child(5) {
         grid-column: span 1;
         grid-row: span 3;
-        border-radius: 4px;
+        @include b-radius;
         @include medium-screens { display: none; }
       }
       &:nth-child(6) {
         grid-column: span 1;
         grid-row: span 3;
-        border-radius: 4px;
+        @include b-radius;
         @include medium-screens { display: none; }
       }
       &:nth-child(7) {
         grid-column: span 2;
         grid-row: span 3;
-        border-radius: 4px;
+        @include b-radius;
       }
       &:nth-child(8) {
         grid-column: span 2;
         grid-row: span 3;
-        border-radius: 4px;
+        @include b-radius;
       }
       &:nth-child(9) {
         grid-column: span 1;
         grid-row: span 3;
-        border-radius: 4px;
+        @include b-radius;
         @include medium-screens { display: none; }
       }
       & > img {

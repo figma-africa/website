@@ -27,10 +27,8 @@
             </section>
         </div>
         {{-- Image Gallery begins here --}}
-        {{-- @flexImageGallery
-        @endflexImageGallery --}}
-        @gridImageGallery
-        @endgridImageGallery
+        @flexImageGallery
+        @endflexImageGallery
         {{-- Image Gallery ends here --}}
         <div class="container">
             <div class="container-ambassadors">

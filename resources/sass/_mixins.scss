@@ -40,12 +40,11 @@
             color: #A6285F !important;
         }
         .fa-instagram {
-            background: linear-gradient(0deg, #E09B3D 0.29%, 
-            #C74C4D 29.97%, #C21975 59.65%, #7024C4 99.22%) !important;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: #ffffff !important;
             border-radius: 4px;
+            &::before {
+                vertical-align: middle;
+                content: url(data:image/svg+xml,%3Csvg%20width%3D%2219%22%20height%3D%2219%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cpath%20d%3D%22M16.8503%200H7.14973C3.20735%200%200%203.20735%200%207.14973V16.8503C0%2020.7926%203.20735%2024%207.14973%2024H16.8503C20.7926%2024%2024%2020.7926%2024%2016.8503V7.14973C24%203.20735%2020.7926%200%2016.8503%200ZM21.5856%2016.8503C21.5856%2019.4655%2019.4655%2021.5856%2016.8503%2021.5856H7.14973C4.5345%2021.5856%202.4144%2019.4655%202.4144%2016.8503V7.14973C2.4144%204.53446%204.5345%202.4144%207.14973%202.4144H16.8503C19.4655%202.4144%2021.5856%204.53446%2021.5856%207.14973V16.8503Z%22%20fill%3D%22url%28%23paint0_linear%29%22%2F%3E%20%3Cpath%20d%3D%22M12.0002%205.79272C8.57754%205.79272%205.79297%208.57729%205.79297%2011.9999C5.79297%2015.4226%208.57754%2018.2072%2012.0002%2018.2072C15.4229%2018.2072%2018.2075%2015.4226%2018.2075%2011.9999C18.2075%208.57725%2015.4229%205.79272%2012.0002%205.79272ZM12.0002%2015.7928C9.90547%2015.7928%208.20737%2014.0947%208.20737%2012C8.20737%209.90523%209.90552%208.20713%2012.0002%208.20713C14.095%208.20713%2015.7931%209.90523%2015.7931%2012C15.7931%2014.0947%2014.0949%2015.7928%2012.0002%2015.7928Z%22%20fill%3D%22url%28%23paint1_linear%29%22%2F%3E%20%3Cpath%20d%3D%22M18.2188%207.32682C19.0403%207.32682%2019.7062%206.6609%2019.7062%205.83944C19.7062%205.01798%2019.0403%204.35205%2018.2188%204.35205C17.3974%204.35205%2016.7314%205.01798%2016.7314%205.83944C16.7314%206.6609%2017.3974%207.32682%2018.2188%207.32682Z%22%20fill%3D%22url%28%23paint2_linear%29%22%2F%3E%20%3Cdefs%3E%20%3ClinearGradient%20id%3D%22paint0_linear%22%20x1%3D%2212%22%20y1%3D%2223.9301%22%20x2%3D%2212%22%20y2%3D%220.186412%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%20%3Cstop%20stop-color%3D%22%23E09B3D%22%2F%3E%20%3Cstop%20offset%3D%220.3%22%20stop-color%3D%22%23C74C4D%22%2F%3E%20%3Cstop%20offset%3D%220.6%22%20stop-color%3D%22%23C21975%22%2F%3E%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%237024C4%22%2F%3E%20%3C%2FlinearGradient%3E%20%3ClinearGradient%20id%3D%22paint1_linear%22%20x1%3D%2212.0002%22%20y1%3D%2223.9301%22%20x2%3D%2212.0002%22%20y2%3D%220.186389%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%20%3Cstop%20stop-color%3D%22%23E09B3D%22%2F%3E%20%3Cstop%20offset%3D%220.3%22%20stop-color%3D%22%23C74C4D%22%2F%3E%20%3Cstop%20offset%3D%220.6%22%20stop-color%3D%22%23C21975%22%2F%3E%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%237024C4%22%2F%3E%20%3C%2FlinearGradient%3E%20%3ClinearGradient%20id%3D%22paint2_linear%22%20x1%3D%2218.2188%22%20y1%3D%2223.9302%22%20x2%3D%2218.2188%22%20y2%3D%220.186502%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%20%3Cstop%20stop-color%3D%22%23E09B3D%22%2F%3E%20%3Cstop%20offset%3D%220.3%22%20stop-color%3D%22%23C74C4D%22%2F%3E%20%3Cstop%20offset%3D%220.6%22%20stop-color%3D%22%23C21975%22%2F%3E%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%237024C4%22%2F%3E%20%3C%2FlinearGradient%3E%20%3C%2Fdefs%3E%20%3C%2Fsvg%3E);
+            }
         }
         .fa-medium-m {
             color: #222222 !important;
@@ -98,6 +97,7 @@
     }
     @include for-tablet-landscape-up {
         font-size: 60px;
+        line-height: 60px;
     }
 }
 
@@ -132,6 +132,18 @@
         line-height: 32px;
         font-size: 22px;
     }
+}
+
+@mixin button-hover {
+    &:hover{
+        text-decoration: dotted;
+        background: #F1F1F1;
+        color: $darker-grey;
+    }
+}
+
+@mixin b-radius($radius: 4px) {
+    border-radius: $radius;
 }
 
 @mixin home-body-text {

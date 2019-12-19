@@ -8,7 +8,7 @@ nav.figma-nav {
             font-size: 22px;
             vertical-align: middle;
         }
-        color: #222222 !important;
+        color: $black !important;
         font-size: 18px !important;
         font-weight: bold;
     }
@@ -18,4 +18,13 @@ nav.figma-nav {
         outline: none;
     }
     @include nav-hover;
+    .navbar-nav {
+        li {
+            a.nav-link {
+                padding-right: 1rem;
+                padding-left: 1rem;
+            }
+        }
+
+    }
 }
