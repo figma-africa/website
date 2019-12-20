@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Figma Africa Website</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        {{-- CSS files --}}
-        <link href="/css/app.css" rel="stylesheet" />
-        <script src="/js/app.js"></script>
-    </head>
-    <body>
+@extends('layouts/app')
+    @section('content')
         @include('partials/navbar')
         <div class="container welcome-container">
             <h1 class="welcome-header">
@@ -79,5 +65,4 @@
         @endecoSystem
         {{-- Ecosystem ends her --}}
         @include('partials/footerBar')
-    </body>
-</html>
+    @endsection
