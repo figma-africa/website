@@ -221,6 +221,11 @@ section {
  }
 
  .event-card {
+    color: $darker-grey;
+     &:hover {
+         text-decoration: none;
+         color: $darker-grey;
+     }
      background: #E6EFFF;
      padding: 40px 23px;
      @include b-radius();
@@ -354,6 +359,7 @@ section {
          max-width: 500px;
          @include b-radius();
          overflow: hidden;
+         margin-left: auto;
          img {
              height: 100%;
          }
@@ -567,7 +573,10 @@ section {
             flex-shrink: 0;
             height: 264px;
             width: 391px;
-            margin-left: -100px;
+            margin-left: -150px;
+            @include for-phone-only {
+                margin-left: -100px;
+            }
             img {
                 width: 100%;
                 @include b-radius();

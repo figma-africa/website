@@ -21,7 +21,8 @@
                         Weekly Design
                         Challenges
                     </h2>
-                    <h3>Design of Physical Products</h3>
+                    
+                    <h3>{{$designChallenge->title}}</h3>
                 </div>
                     <p>
                             Our design challenge is held on a weekly basis and it is designed to enable people explore design concepts in a manner which pushes our creativity, challenges our exposure while offering competition in a positive approach.

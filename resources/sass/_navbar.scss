@@ -19,6 +19,11 @@ nav.figma-nav {
     }
     @include nav-hover;
     .navbar-nav {
+        .nav-item:last-child {
+            a {
+                padding-right:0;                
+            }
+        }
         li {
             a.nav-link {
                 padding-right: 1rem;

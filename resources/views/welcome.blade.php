@@ -27,23 +27,23 @@
 
             <section class="event-cards">
                 <div class="row">
-                    @for($i = 0; $i < 4; $i++)
-                    <a class="event-card col-sm m-3">
+                    @foreach($events as $event)
+                    <a class="event-card col-sm m-3" href='{{$event->link}}'>
                         <span class="day">
-                            14
+                            {{$event->date->format('d')}}
                         </span>
-                        <span class="month">December</span>
+                        <span class="month">{{$event->date->englishMonth}} {{$event->date->format('Y')}}</span>
                         
-                        <h3>Figma Africa Abuja (Design Workshop)</h3>
+                        <h3>{{$event->title}}</h3>
                         
                         <span class="datetime">
-                            10:00 AM - 01:00 PM
+                            {{$event->time}}
                         </span>
                         <span class="datetime">
-                            Abuja, Nigeria
+                            {{$event->state}}, {{$event->country->name}}
                         </span>
                     </a>
-                    @endfor
+                    @endforeach
                 </div>
                 <div class="text-center more-events">
                     <a href="https://www.meetup.com/figma-africa/" class="small-heading">
