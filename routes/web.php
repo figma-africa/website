@@ -17,7 +17,7 @@ Route::get('/', 'ExternalPagesController@index');
 
 Route::get('/ambassadors', function () {
     return view('ambassadors');
-});
+})->name('ambassadors');
 
 Auth::routes(["register" => false]);
 

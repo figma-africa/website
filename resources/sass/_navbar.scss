@@ -7,7 +7,11 @@ nav.figma-nav {
             font-weight: normal;
             font-size: 22px;
             vertical-align: middle;
+            @include for-phone-only {
+                margin-right: 10px;
+            }
         }
+
         color: $black !important;
         font-size: 18px !important;
         font-weight: bold;

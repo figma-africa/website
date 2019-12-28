@@ -12,7 +12,7 @@
                         becoming the go-to place for designers in Africa, and hopefully 
                         you will also be a part of it too. 
                 </p>
-                <a href="{{env('SLACK_IV_LINK')}}" class="join-slack-button" target="blank"> <img src="/images/slack_logo.svg" alt="" srcset=""> Join us on Slack</a>
+                <a href="{{env('SLACK_IV_LINK')}}" class="join-slack-button" target="blank" rel='noopener'> <img src="/images/slack_logo.svg" alt="" srcset=""> Join us on Slack</a>
             </section>
         </div>
         {{-- Image Gallery begins here --}}
@@ -28,7 +28,7 @@
             <section class="event-cards">
                 <div class="row">
                     @foreach($events as $event)
-                    <a class="event-card col-sm m-3" href='{{$event->link}}'>
+                    <a class="event-card col-sm m-3" target="blank" rel='noopener' href='{{$event->link}}'>
                         <span class="day">
                             {{$event->date->format('d')}}
                         </span>
@@ -46,7 +46,7 @@
                     @endforeach
                 </div>
                 <div class="text-center more-events">
-                    <a href="https://www.meetup.com/figma-africa/" class="small-heading">
+                    <a href="https://www.meetup.com/figma-africa/" target="blank" rel='noopener' class="small-heading">
                         More Events & Activities
                     </a>
                 </div>
@@ -63,6 +63,22 @@
         {{-- Eco system begins here --}}
         @ecoSystem
         @endecoSystem
+        <!-- Start a conversation section -->
+        <section class="start-conversation mt-0 container">
+            <div class="row">
+                <div class="col container">
+                    <h2>Let’s start a conversation</h2>
+                    <p>
+                        Obviously, people need to hear about design first before being 
+                        interested and we are always open to ideas and suggestions on how to 
+                        make this work so talk to us. If you have a different conversation in mind 
+                        or question, still reach out to us.
+                    </p>
+                    <a href="mailto:support@figmaafrica.com" target="blank" rel='noopener' class="join-slack-button">Reach out to us &raquo;</a>
+                </div>
+            </div>
+        </section>
         {{-- Ecosystem ends her --}}
         @include('partials/footerBar')
+
     @endsection

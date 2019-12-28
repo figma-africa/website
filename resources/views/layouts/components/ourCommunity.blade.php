@@ -58,7 +58,33 @@
             </div>
         </div>
     </div>
-    <a class="start-figma-group" href="https://docs.google.com/forms/d/e/1FAIpQLSdLQB6pyVBImwLBX-7FqM7GMEIjcIn2JM8u2Vi45wXyEXAzkg/viewform">
-        Start a figma group in your city
-    </a>
+
+    <div class='container mt-5'>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="community-leaders">
+                    <h3>Our Community Leaders</h3>
+                    <p>
+                        The more people get out of the community, the more willing 
+                        they are to give back, and our ambassadors have taken 
+                        it further by building communities in their cities.
+                    </p>
+                    <a class="start-figma-group" target="blank" rel='noopener' href="{{route('ambassadors')}}">See our Ambassadors</a>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="start-group">
+                    <h3>Start a group in your city</h3>
+                    <p>
+                        We will provide you with the support and resources 
+                        needed to build a design group within your 
+                        community and manage it 
+                        to global standards.
+                    </p>
+                    <a class="start-figma-group" target="blank" rel='noopener' href="https://docs.google.com/forms/d/e/1FAIpQLSdLQB6pyVBImwLBX-7FqM7GMEIjcIn2JM8u2Vi45wXyEXAzkg/viewform">Apply to get started</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

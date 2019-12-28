@@ -304,7 +304,7 @@ section {
 
      @include section-margin;
      .challenge-image {
-         height:550px;
+         height:650px;
          width: calc(100% - 60px);
          background-size: 100%;
          @include b-radius();
@@ -429,6 +429,43 @@ section {
          @include small-width(60%);
      }
 
+     h3 {
+         font-size: 30px;
+         text-align: left;
+         margin-top: 25px;
+     }
+     .col-sm-6{
+
+        text-align: left;
+        margin-top: 100px;
+        div {
+            padding:40px;
+            padding-top:5px;
+        }
+         p {
+             color: $grey;
+             font-size: 18px;
+             width:100%;
+             text-align: left;
+        }
+
+    }
+     .community-leaders {
+         height:250px;
+         background-color: #EFF3FF;
+         @include for-phone-only {
+            height: auto;
+        }
+    }
+        
+        .start-group {
+        height:250px;
+         background-color: #E8F3EC;
+         @include for-phone-only {
+             height: auto;
+         }
+     }
+
      @include for-phone-only {
          padding: 100px 0;
          p {
@@ -458,16 +495,18 @@ section {
         }
          .start-figma-group {
             display: inline-block; 
-            margin-top: 55px;
+            margin-top: 15px;
             font-weight: 600;
             font-size: 20px;
             line-height: 26px;
-            padding: 10px;
             letter-spacing: -0.02em;
             color: #333333;
             transition: .3s ease-in-out;
             @include button-hover;
             @include b-radius;
+            &:hover{
+                padding:10px;
+            }
         }
  }
 
@@ -601,6 +640,8 @@ section {
         }
         span {
             @include header-span;
+            display: inline-block;
+            margin-bottom: 25px;
         }
         padding: 0px 20px;
         padding-bottom: 150px;
@@ -721,4 +762,28 @@ section {
               line-height: 26px;
           }
       }
+  }
+
+  section.start-conversation {
+      margin-bottom: 150px;
+    div.container{
+          height: 322px;
+          background-color: #F1F1F1;
+          padding: 60px 80px;
+          p {
+              margin:25px auto;
+              color: $darker-grey;
+          }
+          a {
+              padding:0;
+              &:hover {
+                  padding:10px;
+              }
+          }
+
+          @include for-phone-only{
+              padding: 20px;
+              height:auto;
+          }
+    }
   }

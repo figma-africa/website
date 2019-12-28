@@ -15842,6 +15842,12 @@ nav.figma-nav a span {
   vertical-align: middle;
 }
 
+@media (max-width: 599px) {
+  nav.figma-nav a span {
+    margin-right: 10px;
+  }
+}
+
 nav.figma-nav .navbar-toggler {
   border: 0;
   outline: none;
@@ -16379,7 +16385,7 @@ section {
 }
 
 .design-challenges .challenge-image {
-  height: 550px;
+  height: 650px;
   width: calc(100% - 60px);
   background-size: 100%;
   border-radius: 4px;
@@ -16624,6 +16630,51 @@ section {
   }
 }
 
+.communities h3 {
+  font-size: 30px;
+  text-align: left;
+  margin-top: 25px;
+}
+
+.communities .col-sm-6 {
+  text-align: left;
+  margin-top: 100px;
+}
+
+.communities .col-sm-6 div {
+  padding: 40px;
+  padding-top: 5px;
+}
+
+.communities .col-sm-6 p {
+  color: #828282;
+  font-size: 18px;
+  width: 100%;
+  text-align: left;
+}
+
+.communities .community-leaders {
+  height: 250px;
+  background-color: #EFF3FF;
+}
+
+@media (max-width: 599px) {
+  .communities .community-leaders {
+    height: auto;
+  }
+}
+
+.communities .start-group {
+  height: 250px;
+  background-color: #E8F3EC;
+}
+
+@media (max-width: 599px) {
+  .communities .start-group {
+    height: auto;
+  }
+}
+
 @media (max-width: 599px) {
   .communities {
     padding: 100px 0;
@@ -16682,11 +16733,10 @@ section {
 
 .communities .start-figma-group {
   display: inline-block;
-  margin-top: 55px;
+  margin-top: 15px;
   font-weight: 600;
   font-size: 20px;
   line-height: 26px;
-  padding: 10px;
   letter-spacing: -0.02em;
   color: #333333;
   -webkit-transition: 0.3s ease-in-out;
@@ -16699,6 +16749,10 @@ section {
           text-decoration: dotted;
   background: #F1F1F1;
   color: #424242;
+}
+
+.communities .start-figma-group:hover {
+  padding: 10px;
 }
 
 .home-footer {
@@ -16929,6 +16983,8 @@ section.join-us span {
   color: #828282;
   text-transform: uppercase;
   font-weight: bold;
+  display: inline-block;
+  margin-bottom: 25px;
 }
 
 @media (min-width: 576px) {
@@ -17116,6 +17172,36 @@ section.join-us span {
   .text-for-xs p {
     font-size: 16px;
     line-height: 26px;
+  }
+}
+
+section.start-conversation {
+  margin-bottom: 150px;
+}
+
+section.start-conversation div.container {
+  height: 322px;
+  background-color: #F1F1F1;
+  padding: 60px 80px;
+}
+
+section.start-conversation div.container p {
+  margin: 25px auto;
+  color: #424242;
+}
+
+section.start-conversation div.container a {
+  padding: 0;
+}
+
+section.start-conversation div.container a:hover {
+  padding: 10px;
+}
+
+@media (max-width: 599px) {
+  section.start-conversation div.container {
+    padding: 20px;
+    height: auto;
   }
 }
 
