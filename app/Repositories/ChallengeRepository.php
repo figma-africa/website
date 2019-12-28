@@ -20,6 +20,6 @@ class ChallengeRepository extends Common implements RepositoryInterface
      */
     public function getLatest()
     {
-        return $this->model->orderBy('created_at', 'desc')->first();
+        return $this->model->orderBy('expiry', 'desc')->first();
     }
 }

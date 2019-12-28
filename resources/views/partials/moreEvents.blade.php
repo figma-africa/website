@@ -11,7 +11,7 @@
                     <h3>Design of Physical Products</h3>
                 </div>
                 <div class="challenge-image">
-                    <img src="/images/design-challenge.jpg" alt="">
+                    <img src="{{$designChallenge->challenge_image_link}}" alt="">
                 </div>
             </div>
             <div class="col-sm">
@@ -29,7 +29,7 @@
                             <br />&nbsp; <br />
                             Submissions are voted and the winning entry gets a prize as well as promotion on all of our platforms. 
                     </p>
-                    <a href="#">View all entries &raquo;</a>
+                    <a href="{{route('challenges')}}" class="view-entries" >View all entries &raquo;</a>
             </div>
         </div>
     </div>

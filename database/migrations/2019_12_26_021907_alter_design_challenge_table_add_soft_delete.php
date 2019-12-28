@@ -13,7 +13,7 @@ class AlterDesignChallengeTableAddSoftDelete extends Migration
      */
     public function up()
     {
-        Schema::table('design_challenges', function ($table) {
+        Schema::table('design_challenges', function (Blueprint $table) {
             $table->softDeletes();
         });
     }

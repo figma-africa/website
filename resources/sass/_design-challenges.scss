@@ -1,0 +1,51 @@
+.design-challenges{
+    .card {
+        max-height: 400px;
+        overflow: hidden;
+        margin-bottom: 100px;
+        h2 {
+            font-size: 40px;
+        }
+        position: relative;
+
+        img {
+            min-height: 100%;
+            width: 100%;
+        }
+
+        .col-sm-4{
+            div {
+                overflow: hidden;
+                height: 400px;
+            }
+        }
+    }
+
+    .entry-count {
+        position: absolute;
+        bottom:10px;
+    }
+
+    .col-sm-8{
+        position: relative;
+        height: 400px;
+    }
+
+    .expiry-status {
+        margin-top: 15px;
+        display: block;
+        text-transform: capitalize;
+        color: $grey;
+    }
+}
+
+.welcome {
+    .welcome-header{
+        margin-top: 100px;
+    }
+    .welcome-body {
+        p {
+            font-size: 20px;
+        }
+    }
+}

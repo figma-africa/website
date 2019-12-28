@@ -52,6 +52,12 @@
                     <label>Expiry</label>
                     <input type='date' name='expiry' class='form-control mb-3' />
 
+                    <label>Challenge Image Link</label>
+                    <input type='text' name='challenge_image_link' class='form-control mb-3' />
+
+                    <label>Description</label>
+                    <textarea class='form-control mb-3' name='description'></textarea>
+
                     <button class='btn btn-info'>Create Design Challenge</button>
                 </form>
             </div>

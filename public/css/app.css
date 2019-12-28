@@ -16009,7 +16009,7 @@ h1.welcome-header {
 }
 
 .welcome-events-activities .header-span {
-  color: #828282;
+  color: #424242;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -16343,12 +16343,32 @@ section {
   color: #424242;
 }
 
+.more-events .view-entries {
+  color: #222222;
+  font-weight: bold;
+  border-radius: 4px;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.more-events .view-entries:hover {
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+  background: #F1F1F1;
+  color: #424242;
+}
+
+.more-events .view-entries:hover {
+  padding: 10px;
+}
+
 .design-challenges {
   margin-top: 100px;
 }
 
 .design-challenges span {
-  color: #828282;
+  color: #424242;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -16521,7 +16541,7 @@ section {
 }
 
 .benefits span {
-  color: #828282;
+  color: #424242;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -16613,7 +16633,7 @@ section {
 }
 
 .communities span {
-  color: #828282;
+  color: #424242;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -16655,6 +16675,7 @@ section {
 
 .communities .community-leaders {
   height: 250px;
+  border-radius: 0.25rem;
   background-color: #EFF3FF;
 }
 
@@ -16667,6 +16688,7 @@ section {
 .communities .start-group {
   height: 250px;
   background-color: #E8F3EC;
+  border-radius: 0.25rem;
 }
 
 @media (max-width: 599px) {
@@ -16980,7 +17002,7 @@ section.join-us .image-div-smaller img {
 }
 
 section.join-us span {
-  color: #828282;
+  color: #424242;
   text-transform: uppercase;
   font-weight: bold;
   display: inline-block;
@@ -17183,6 +17205,7 @@ section.start-conversation div.container {
   height: 322px;
   background-color: #F1F1F1;
   padding: 60px 80px;
+  border-radius: 0.25rem;
 }
 
 section.start-conversation div.container p {
@@ -17380,5 +17403,51 @@ th {
     color: #000;
     font-weight: bold;
   }
+}
+
+.design-challenges .card {
+  max-height: 400px;
+  overflow: hidden;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.design-challenges .card h2 {
+  font-size: 40px;
+}
+
+.design-challenges .card img {
+  min-height: 100%;
+  width: 100%;
+}
+
+.design-challenges .card .col-sm-4 div {
+  overflow: hidden;
+  height: 400px;
+}
+
+.design-challenges .entry-count {
+  position: absolute;
+  bottom: 10px;
+}
+
+.design-challenges .col-sm-8 {
+  position: relative;
+  height: 400px;
+}
+
+.design-challenges .expiry-status {
+  margin-top: 15px;
+  display: block;
+  text-transform: capitalize;
+  color: #828282;
+}
+
+.welcome .welcome-header {
+  margin-top: 100px;
+}
+
+.welcome .welcome-body p {
+  font-size: 20px;
 }
 

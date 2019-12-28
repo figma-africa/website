@@ -37,7 +37,7 @@ class ExternalPagesController extends Controller
     public function index()
     {
         $events = $this->_events->with('country')->sortBy('created_at', 'desc')
-            ->take(4)->map(
+            ->all()->take(4)->map(
                 function ($current, $key) {
                     $current->date = new Carbon($current->date);
                     return $current;
@@ -47,5 +47,18 @@ class ExternalPagesController extends Controller
         $designChallenge = $this->_challenge->getLatest();
         $data = compact('events', 'designChallenge');
         return view('welcome', $data);
+    }
+
+    /**
+     * View for the design challenges
+     * 
+     * @return \Illuminate\View
+     */
+    public function challenges()
+    {
+        $allChallenges = $this->_challenge->sortBy('expiry', 'desc')
+            ->withCount('entries')->all();
+        $data = compact('allChallenges');
+        return view('challenges', $data);
     }
 }

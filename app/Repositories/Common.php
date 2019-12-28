@@ -125,6 +125,20 @@ abstract class Common implements RepositoryInterface
      */
     public function sortBy($criteria, $order)
     {
-        return $this->model->orderBy($criteria, $order)->get();
+        $this->model = $this->model->orderBy($criteria, $order);
+        return $this;
+    }
+
+    /**
+     * Get the count of a related model
+     * 
+     * @param mixed $relation relation name(s) string or array
+     * 
+     * @return this
+     */
+    public function withCount($relation)
+    {
+        $this->model = $this->model->withCount($relation);
+        return $this;
     }
 }

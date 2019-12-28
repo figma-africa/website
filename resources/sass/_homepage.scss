@@ -273,6 +273,17 @@ section {
         font-weight: 600;
         color: $black;
     }
+    .view-entries{
+        @include button-hover;
+        color: $black;
+        font-weight: bold;
+        &:hover {
+            padding: 10px;
+        }
+        @include b-radius;
+        display: inline-block;
+        transition: .3s ease-in-out;
+    }
  }
 
  .design-challenges {
@@ -452,7 +463,8 @@ section {
     }
      .community-leaders {
          height:250px;
-         background-color: #EFF3FF;
+          @include border-radius;
+          background-color: #EFF3FF;
          @include for-phone-only {
             height: auto;
         }
@@ -461,6 +473,7 @@ section {
         .start-group {
         height:250px;
          background-color: #E8F3EC;
+         @include border-radius;
          @include for-phone-only {
              height: auto;
          }
@@ -770,6 +783,7 @@ section {
           height: 322px;
           background-color: #F1F1F1;
           padding: 60px 80px;
+          @include border-radius;
           p {
               margin:25px auto;
               color: $darker-grey;

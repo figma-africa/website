@@ -19,6 +19,8 @@ Route::get('/ambassadors', function () {
     return view('ambassadors');
 })->name('ambassadors');
 
+Route::get('/challenges', 'ExternalPagesController@challenges')->name('challenges');
+
 Auth::routes(["register" => false]);
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {    
