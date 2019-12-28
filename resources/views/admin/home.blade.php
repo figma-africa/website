@@ -56,11 +56,13 @@
                     <input type='text' name='challenge_image_link' class='form-control mb-3' />
 
                     <label>Description</label>
-                    <textarea class='form-control mb-3' name='description'></textarea>
+                    <textarea id='summernote' class='form-control mb-3' name='description'></textarea>
 
                     <button class='btn btn-info'>Create Design Challenge</button>
                 </form>
             </div>
         </div>
     </div>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>tinymce.init({selector:'textarea'});</script>
 @endsection

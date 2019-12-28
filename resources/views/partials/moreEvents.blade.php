@@ -26,7 +26,7 @@
                 </div>
                     <p>
                     @if(strlen($designChallenge->description) > 10)
-                            {{$designChallenge->description}}
+                            {!!$designChallenge->description!!}
                     @else
                     Our design challenge is held on a weekly basis and it is designed to enable people explore design concepts in a manner which pushes our creativity, challenges our exposure while offering competition in a positive approach.
                             <br />&nbsp; <br />

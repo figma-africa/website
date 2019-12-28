@@ -54,7 +54,6 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src="/js/app.js"></script>
-
 </body>
 
 </html>

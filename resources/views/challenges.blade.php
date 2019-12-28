@@ -32,7 +32,7 @@
                             <h2>{{$challenge->title}}</h2>
                             <span class="small heading">Ends: <span>{{$challenge->carbon_expiry->toDayDateTimeString()}}</span></span>
                             <p class="pr-3">
-                                {{$challenge->description}}
+                                {!! $challenge->description !!}
                             </p>
                             <span class="entry-count">
                                 
