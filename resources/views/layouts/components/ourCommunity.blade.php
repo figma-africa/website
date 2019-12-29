@@ -69,7 +69,7 @@
                         they are to give back, and our ambassadors have taken 
                         it further by building communities in their cities.
                     </p>
-                    <a class="start-figma-group" target="blank" rel='noopener' href="{{route('ambassadors')}}">See our Ambassadors</a>
+                    <a class="start-figma-group our-amb" target="blank" rel='noopener' href="{{route('ambassadors')}}">See our Ambassadors</a>
                 </div>
             </div>
 

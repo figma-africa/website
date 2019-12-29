@@ -1,6 +1,12 @@
-.design-challenges{
+.design-challenges-section{
     .card {
         max-height: 400px;
+        @include for-phone-only {
+            max-height: unset;
+            p {
+                margin-top: 25px;
+            }
+        }
         overflow: hidden;
         margin-bottom: 100px;
         h2 {
@@ -17,18 +23,34 @@
             div {
                 overflow: hidden;
                 height: 400px;
+                @include for-phone-only {
+                    height: 150px;
+                    overflow: auto;
+                }
             }
         }
     }
 
     .entry-count {
         position: absolute;
+        @include for-phone-only {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 14px;
+            color: $grey;
+        }
         bottom:10px;
     }
 
     .col-sm-8{
         position: relative;
         height: 400px;
+        @include for-phone-only {
+            height: auto;
+            padding: 30px;
+            padding-top: 10px;
+        }
     }
 
     .expiry-status {
@@ -36,6 +58,7 @@
         display: block;
         text-transform: capitalize;
         color: $grey;
+        margin-bottom: 15px;
     }
 }
 
@@ -47,5 +70,9 @@
         p {
             font-size: 20px;
         }
+    }
+
+    .heading {
+        margin-top: 0 !important;
     }
 }

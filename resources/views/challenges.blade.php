@@ -14,13 +14,13 @@
                 </p>
             </section>
         </div>
-        <div class="container design-challenges">
+        <div class="container design-challenges-section">
             @foreach ($allChallenges as $challenge)
                 <div class='card shadow'>
                     <div class='row'>
                         <div class="col-sm-4">
                             <div>
-                                <img src="{{$challenge->challenge_image_link}}" alt="" srcset="">
+                                <img src="{{$challenge->challenge_image_link}}" alt="{{$challenge->title}}">
                             </div>
                         </div>
                         <div class="col-sm-8 pr-3">
@@ -30,12 +30,16 @@
                             <span class="expiry-status">Still Ongoing</span>
                             @endif
                             <h2>{{$challenge->title}}</h2>
-                            <span class="small heading">Ends: <span>{{$challenge->carbon_expiry->toDayDateTimeString()}}</span></span>
+                            <span class="small heading">
+                                Ends: 
+                                <span>
+                                    {{$challenge->carbon_expiry->toDayDateTimeString()}}
+                                </span>
+                            </span>
                             <p class="pr-3">
                                 {!! $challenge->description !!}
                             </p>
-                            <span class="entry-count">
-                                
+                            <span class="entry-count">  
                                 {{$challenge->entries_count}} 
                                 @if($challenge->entries_count == 1)
                                 Entry

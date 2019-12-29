@@ -44,6 +44,7 @@ h1 {
     @include b-radius;
     display: inline-block;
     transition: .3s ease-in-out;
+    margin-left: -10px;
 }
 
 .welcome-events-activities {
@@ -277,8 +278,10 @@ section {
         @include button-hover;
         color: $black;
         font-weight: bold;
+        padding: 10px;
+        margin-left: -10px;
         &:hover {
-            padding: 10px;
+            background-color: #f1f1f1;
         }
         @include b-radius;
         display: inline-block;
@@ -517,8 +520,15 @@ section {
             transition: .3s ease-in-out;
             @include button-hover;
             @include b-radius;
+            margin-left: -15px;
+            padding:10px;
             &:hover{
-                padding:10px;
+                background-color: #C2F3D4;
+            }
+            &.our-amb{
+                &:hover{
+                    background-color: #CCD9FF;
+                }
             }
         }
  }
@@ -780,18 +790,20 @@ section {
   section.start-conversation {
       margin-bottom: 150px;
     div.container{
-          height: 322px;
+          height: 300px;
           background-color: #F1F1F1;
           padding: 60px 80px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
           @include border-radius;
           p {
               margin:25px auto;
               color: $darker-grey;
           }
           a {
-              padding:0;
               &:hover {
-                  padding:10px;
+                  background-color: #f1f1f1;
               }
           }
 
