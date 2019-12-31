@@ -36,7 +36,7 @@
                                     {{$challenge->carbon_expiry->toDayDateTimeString()}}
                                 </span>
                             </span>
-                            <p class="pr-3">
+                            <p class="pr-3 pt-3">
                                 {!! $challenge->description !!}
                             </p>
                             <span class="entry-count">  

@@ -8,7 +8,12 @@ use App\Repositories\Interfaces\RepositoryInterface;
 /**
  * Common implementations of all repositories
  * 
+ * @category Package
+ * 
  * @author Friday Godswill <faradayyg@gmail.com>
+ * 
+ * @license MIT https://openlicense.org/MIT
+ * 
  */
 abstract class Common implements RepositoryInterface
 {
@@ -69,7 +74,7 @@ abstract class Common implements RepositoryInterface
      *
      * @param array $data Data to create new resources with
      * 
-     * @return array
+     * @return \Illuminate\Database\Eloquent\Collection
      */
     public function create(array $data)
     {
@@ -125,6 +130,7 @@ abstract class Common implements RepositoryInterface
      */
     public function sortBy($criteria, $order)
     {
+        // Reassignment because orderBy returns new instance and does not modify the old one.
         $this->model = $this->model->orderBy($criteria, $order);
         return $this;
     }
