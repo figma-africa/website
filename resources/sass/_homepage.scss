@@ -197,6 +197,13 @@ h1, h2, h3, h4, b {
                 height: 200px;
             }
           }
+
+          &:nth-child(even) {
+            padding: 0 0.4rem;
+          }
+          &:nth-child(odd) {
+            padding: 0;
+          }
     }
     @include for-phone-only {
         margin-top: .2rem;
@@ -325,6 +332,7 @@ section {
          overflow: hidden;
          img {
              width: 100%;
+             @include b-radius();
          }
 
          @include for-phone-only {
@@ -770,11 +778,19 @@ section {
     }
   }
   
+  .scale-career-mobile {
+    .image-div {
+          @include b-radius();
+          img{
+          @include b-radius();
+          }
+    }
+  }
   
   @include medium-screens {
       .scale-career-mobile { padding: 0; }
       .benefits .image-div {
-          border-radius: 0;
+          @include b-radius();
           height: 500px;
       }
       .text-for-xs {
