@@ -33,7 +33,7 @@
                             Submissions are voted and the winning entry gets a prize as well as promotion on all of our platforms. 
                             @endif
                     </p>
-                    <a href="{{route('challenges')}}" class="view-entries" >View all entries &raquo;</a>
+                    <a href="{{route('challenges')}}" class="view-entries" >View all challenges &raquo;</a>
             </div>
         </div>
     </div>

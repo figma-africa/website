@@ -176,6 +176,10 @@ h1, h2, h3, h4, b {
                 padding: 0;
                 padding-right: .2rem;
             }
+
+            @include for-phone-only {
+                padding-left: 0;
+            }
           }
           &:nth-child(3) {
             min-width: 467.03px;

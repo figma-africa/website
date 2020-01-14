@@ -31,7 +31,7 @@ class ExternalPagesController extends Controller
 
     /**
      * Index controller for homepage
-     * 
+     *
      * @return \Illuminate\View
      */
     public function index()
@@ -43,7 +43,6 @@ class ExternalPagesController extends Controller
                     return $current;
                 }
             );
-        
         $designChallenge = $this->_challenge->getLatest();
         $data = compact('events', 'designChallenge');
         return view('welcome', $data);
@@ -51,7 +50,7 @@ class ExternalPagesController extends Controller
 
     /**
      * View for the design challenges
-     * 
+     *
      * @return \Illuminate\View
      */
     public function challenges()
