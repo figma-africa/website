@@ -28,7 +28,11 @@
             <section class="event-cards">
                 <div class="row">
                     @foreach($events as $event)
-                    <a class="event-card col-sm m-3" style="background-color: {{$event->color}}" target="blank" rel='noopener' href='{{$event->link}}'>
+                    <a class="event-card col-sm m-3" 
+                    @if($event->color != '#000000')
+                    style="background-color: {{$event->color}}" 
+                    @endif
+                    target="blank" rel='noopener' href='{{$event->link}}'>
                         <span class="day">
                             {{$event->date->format('d')}}
                         </span>
