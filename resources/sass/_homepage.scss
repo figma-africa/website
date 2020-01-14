@@ -339,6 +339,7 @@ section {
              width: 100%;
              border-radius: 0;
              margin-top: 50px;
+             height: auto;
          }
      }
      h2 {
@@ -460,6 +461,9 @@ section {
 
         text-align: left;
         margin-top: 100px;
+        @include for-phone-only {
+            margin-top: 10px;
+        }
         div {
             padding:40px;
             padding-top:5px;
@@ -782,7 +786,11 @@ section {
     .image-div {
           @include b-radius();
           img{
-          @include b-radius();
+            @include b-radius();
+            @include for-phone-only {
+                width: 100%;
+                height: auto;
+            }
           }
     }
   }
@@ -791,7 +799,7 @@ section {
       .scale-career-mobile { padding: 0; }
       .benefits .image-div {
           @include b-radius();
-          height: 500px;
+          max-height: 500px;
       }
       .text-for-xs {
           padding-left: 15px;
