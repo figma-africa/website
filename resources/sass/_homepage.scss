@@ -169,12 +169,12 @@ h1, h2, h3, h4, b {
           &:nth-child(2) {
             min-width: 467.03px;
             height: 305px;
-            padding: 0 .2rem;
+            padding: 0 0.4rem;
             @include medium-screens {
                 min-width: 160px;
                 height: 200px;
                 padding: 0;
-                padding-right: .2rem;
+                padding-right: 0 0.4rem;
             }
 
             @include for-phone-only {
@@ -184,17 +184,17 @@ h1, h2, h3, h4, b {
           &:nth-child(3) {
             min-width: 467.03px;
             height: 305px;
-            padding: 0 .2rem;
             @include medium-screens {
                 min-width: 160px;
                 height: 200px;
                 padding: 0;
-                // padding-right: 1rem;
+                padding-right: 0.4rem;
             }
           }
           &:nth-child(4) {
             min-width: 233px;
             height: 305px;
+            padding-left: .4rem;
             @include medium-screens {
                 display: none;
                 min-width: 160px;
@@ -202,9 +202,9 @@ h1, h2, h3, h4, b {
             }
           }
 
-          &:nth-child(even) {
-            padding: 0 0.4rem;
-          }
+        //   &:nth-child(even) {
+        //     padding: 0 0.4rem;
+        //   }
           &:nth-child(odd) {
             padding: 0;
           }

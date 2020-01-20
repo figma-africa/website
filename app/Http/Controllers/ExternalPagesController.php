@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Repositories\EventRepository;
 use App\Repositories\ChallengeRepository;
 use Carbon\Carbon;
+use App\Models\Ambassador;
 
 class ExternalPagesController extends Controller
 {
@@ -59,5 +60,10 @@ class ExternalPagesController extends Controller
             ->withCount('entries')->all();
         $data = compact('allChallenges');
         return view('challenges', $data);
+    }
+
+    public function ambassadors () {
+        $ambassadors = Ambassador::get();
+        return view('ambassadors', compact('ambassadors'));
     }
 }

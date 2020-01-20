@@ -25,14 +25,14 @@
                     <p>See our communities and know which to join</p>
                 </div>
                 {{-- Community leaders begins here --}}
-                @communityLeaders(['location'=> 'Nigeria', 'numOfAmbo'=> '14 Ambassadors'])
+                @communityLeaders(['location'=> 'Nigeria', 'numOfAmbo'=> '14 Ambassadors', 'ambassadors' => $ambassadors])
                 @endcommunityLeaders
-                @communityLeaders(['location'=> 'Ghana', 'numOfAmbo'=> '14 Ambassadors'])
+                {{-- @communityLeaders(['location'=> 'Ghana', 'numOfAmbo'=> '14 Ambassadors'])
                 @endcommunityLeaders
                 @communityLeaders(['location'=> 'Morocco', 'numOfAmbo'=> '14 Ambassadors'])
                 @endcommunityLeaders
                 @communityLeaders(['location'=> 'Rwanda', 'numOfAmbo'=> '14 Ambassadors'])
-                @endcommunityLeaders
+                @endcommunityLeaders --}}
                 {{-- Community leaders ends here --}}
             </div>
         </div>
