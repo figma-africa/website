@@ -16622,7 +16622,7 @@ section {
 }
 
 .communities h2 {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 @media (max-width: 599px) {
@@ -16675,6 +16675,7 @@ section {
   font-size: 30px;
   text-align: left;
   margin-top: 25px;
+  font-weight: 700;
 }
 
 .communities .col-sm-6 {

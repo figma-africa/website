@@ -448,7 +448,7 @@ section {
      background: #fafafa;
      text-align: center;
      h2 {
-         margin-top: 20px;
+         margin: 20px 0;
          @include header-font;
          @include for-phone-only {
              font-size: 30px;
@@ -466,6 +466,7 @@ section {
          font-size: 30px;
          text-align: left;
          margin-top: 25px;
+         font-weight: $font-bold;
      }
      .col-sm-6{
 
