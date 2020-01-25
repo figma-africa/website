@@ -15840,6 +15840,7 @@ nav.figma-nav a span {
   font-weight: normal;
   font-size: 22px;
   vertical-align: middle;
+  padding-right: 5px;
 }
 
 @media (max-width: 599px) {
@@ -15879,8 +15880,8 @@ nav.figma-nav .navbar-nav .nav-item:last-child a {
 }
 
 nav.figma-nav .navbar-nav li a.nav-link {
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 body {
@@ -16058,7 +16059,6 @@ h1.welcome-header {
 
 h1,
 h2,
-h3,
 h4,
 b {
   font-weight: bold;
@@ -16303,7 +16303,7 @@ section {
 }
 
 .event-card span.month {
-  font-weight: bold;
+  font-weight: 600;
   font-size: calc(16px + 2 * ((100vw - 360px) / 768));
   text-transform: uppercase;
 }
@@ -16317,11 +16317,13 @@ section {
 .event-card span.datetime {
   display: block;
   font-size: 16px;
+  font-weight: 500;
 }
 
 .event-card h3 {
   font-size: 24px;
   margin-top: 50px;
+  font-weight: 500px;
 }
 
 .event-card:nth-child(2) {
@@ -16521,14 +16523,17 @@ section {
 
 .benefits .image-div {
   height: 650px;
-  max-width: 500px;
+  max-width: 550px;
   border-radius: 4px;
   overflow: hidden;
   margin-left: auto;
 }
 
 .benefits .image-div img {
+  width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .benefits h2 {
@@ -17276,7 +17281,7 @@ section.start-conversation div.container a:hover {
 
 .container-ambassadors {
   margin: 80px auto;
-  max-width: 650px;
+  max-width: 850px;
 }
 
 .container-ambassadors .gatherings {
@@ -17362,11 +17367,14 @@ td span {
   display: block;
   color: #828282;
   font-weight: 400;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
 }
 
 td:first-child {
   font-size: 20px;
-  line-height: 26px;
+  line-height: 38px;
   font-weight: 600;
   letter-spacing: -0.02em;
   white-space: nowrap;

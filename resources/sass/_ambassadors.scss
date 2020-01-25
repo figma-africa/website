@@ -1,6 +1,6 @@
 .container-ambassadors {
     margin: 80px auto;
-    max-width: 650px;
+    max-width: 850px;
     .gatherings {
         color: $grey;
         font-weight: $font-medium;
@@ -74,10 +74,13 @@ th {
             display: block;
             color: #828282;
             font-weight: $font-normal;
+            overflow: hidden;
+            display: block;
+            text-overflow: ellipsis;
             }
             &:first-child {
                 font-size: 20px;
-                line-height: 26px;
+                line-height: 38px;
                 font-weight: $font-semi-bold;
                 letter-spacing: -0.02em;
                 white-space: nowrap;

@@ -21,7 +21,7 @@
     @foreach ($ambassadors as $ambassador)
     <tr>
         <td data-column="First Name">{{$ambassador->full_name}}
-        <span>{{$ambassador->professional_title}}, {{$ambassador->company}}</span>
+        <span>{{$ambassador->professional_title}} | {{$ambassador->company}}</span>
         </td>
         <td></td>
     <td data-column="Location">{{$ambassador->city}}</td>
