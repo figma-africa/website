@@ -17296,7 +17296,7 @@ section.start-conversation div.container a:hover {
 .container-ambassadors h3 {
   color: #222;
   font-size: 28px;
-  line-height: 30px;
+  line-height: 38px;
   letter-spacing: -0.02em;
   font-weight: 700;
   margin-bottom: 40px;
@@ -17458,6 +17458,18 @@ th {
     color: #000;
     font-weight: bold;
   }
+}
+
+td.name {
+  width: 60%;
+}
+
+td.location {
+  width: 25%;
+}
+
+td.view-profile {
+  width: 15%;
 }
 
 .design-challenges-section .card {

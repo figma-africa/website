@@ -17953,9 +17953,9 @@ $("#menu-toggle").click(function (e) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/anthony/Documents/Projects/website/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /Users/anthony/Documents/Projects/website/resources/sass/app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! /Users/anthony/Documents/Projects/website/resources/sass/internal.scss */"./resources/sass/internal.scss");
+__webpack_require__(/*! /home/friday/projects/side/figmaafrica/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /home/friday/projects/side/figmaafrica/resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /home/friday/projects/side/figmaafrica/resources/sass/internal.scss */"./resources/sass/internal.scss");
 
 
 /***/ })

@@ -13,7 +13,7 @@ class CreateAmbassadorTable extends Migration
      */
     public function up()
     {
-        Schema::create('ambassador', function (Blueprint $table) {
+        Schema::create('ambassadors', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('full_name');
             $table->string('email')->unique();

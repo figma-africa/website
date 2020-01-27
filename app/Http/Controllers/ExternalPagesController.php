@@ -62,8 +62,17 @@ class ExternalPagesController extends Controller
         return view('challenges', $data);
     }
 
-    public function ambassadors () {
+    public function ambassadors()
+    {
         $ambassadors = Ambassador::get();
-        return view('ambassadors', compact('ambassadors'));
+        $final = [];
+        foreach ($ambassadors as $ambassador) {
+            if (isset($final[$ambassador->country])) {
+                array_push($final[$ambassador->country], $ambassador);
+            } else {
+                $final[$ambassador->country] = [$ambassador];
+            }
+        }
+        return view('ambassadors', ['ambassadorObject' => $final]);
     }
 }

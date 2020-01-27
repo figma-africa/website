@@ -11,7 +11,7 @@
     h3 {
         color: #222;
         font-size: 28px;
-        line-height: 30px;
+        line-height: 38px;
         letter-spacing: -0.02em;
         font-weight: $font-bold;
         margin-bottom: 40px;
@@ -151,4 +151,14 @@ only screen and (max-width: 760px),
 		font-weight: bold;
 	}
 
+}
+
+td.name {
+    width: 60%;
+}
+td.location {
+    width: 25%;
+}
+td.view-profile {
+    width: 15%;
 }
