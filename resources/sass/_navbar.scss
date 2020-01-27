@@ -7,6 +7,7 @@ nav.figma-nav {
             font-weight: normal;
             font-size: 22px;
             vertical-align: middle;
+            padding-right: 5px;
             @include for-phone-only {
                 margin-right: 10px;
             }
@@ -30,8 +31,8 @@ nav.figma-nav {
         }
         li {
             a.nav-link {
-                padding-right: 1rem;
-                padding-left: 1rem;
+                padding-right: 1.5rem;
+                padding-left: 1.5rem;
             }
         }
 

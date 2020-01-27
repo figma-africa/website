@@ -24,15 +24,18 @@
                     <h2>Figma Africa community leaders</h2>
                     <p>See our communities and know which to join</p>
                 </div>
+
                 {{-- Community leaders begins here --}}
-                @communityLeaders(['location'=> 'Nigeria', 'numOfAmbo'=> '14 Ambassadors'])
-                @endcommunityLeaders
-                @communityLeaders(['location'=> 'Ghana', 'numOfAmbo'=> '14 Ambassadors'])
-                @endcommunityLeaders
-                @communityLeaders(['location'=> 'Morocco', 'numOfAmbo'=> '14 Ambassadors'])
-                @endcommunityLeaders
-                @communityLeaders(['location'=> 'Rwanda', 'numOfAmbo'=> '14 Ambassadors'])
-                @endcommunityLeaders
+                @foreach($ambassadorObject as $ambassadors)
+                    @communityLeaders(
+                        [
+                            'location'=> $ambassadors[0]->country,
+                            'numOfAmbo'=> count($ambassadors),
+                            'ambassadors' => $ambassadors
+                        ]
+                    )
+                    @endcommunityLeaders
+                @endforeach
                 {{-- Community leaders ends here --}}
             </div>
         </div>
@@ -45,4 +48,6 @@
         @endecoSystem
         {{-- Ecosystem ends her --}}
         @include('partials/footerBar')
+
 @endsection
+

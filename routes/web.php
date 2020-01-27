@@ -15,9 +15,7 @@ use App\Http\Controllers\ChallengeController;
 
 Route::get('/', 'ExternalPagesController@index');
 
-Route::get('/ambassadors', function () {
-    return view('ambassadors');
-})->name('ambassadors');
+Route::get('/ambassadors', 'ExternalPagesController@ambassadors')->name('ambassadors');
 
 Route::get('/challenges', 'ExternalPagesController@challenges')->name('challenges');
 
