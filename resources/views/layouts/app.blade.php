@@ -9,7 +9,7 @@
         <title>Figma Africa Website</title>
 
         {{-- CSS files --}}
-        <link href="/css/app.css?v=jan_20" rel="stylesheet" />
+        <link href="/css/app.css?v=jan_27" rel="stylesheet" />
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154867932-1"></script>
         <script>
@@ -24,6 +24,6 @@
     <body>
         @yield('content')
     </body>
-    <script src="/js/app.js?v=jan_20"></script>
+    <script src="/js/app.js?v=jan_27"></script>
 
 </html>
