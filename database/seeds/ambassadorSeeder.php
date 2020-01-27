@@ -13,7 +13,7 @@ class ambassadorSeeder extends Seeder
     {
         $ambs = \File::get(__dir__."/../data/ambs.json");
         $ambs = json_decode($ambs, true);
-        DB::table('ambassador')->truncate();
-        DB::table('ambassador')->insert($ambs);
+        DB::table('ambassadors')->truncate();
+        DB::table('ambassadors')->insert($ambs);
     }
 }
