@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Figma Africa is a community of web designers and other creatives, our events and activities are designed to enhance learning and understanding of design while bringing together members in the community into a physical or virtual space for them to connect and network.">
         <link rel="icon" href="/images/logo.png" type="image/png"/>
+        <meta http-equiv="Cache-control" content="public">
 
         <title>Figma Africa Website</title>
 
