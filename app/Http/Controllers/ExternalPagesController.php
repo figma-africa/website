@@ -62,15 +62,20 @@ class ExternalPagesController extends Controller
         return view('challenges', $data);
     }
 
+    /**
+     * Return all the ambassadors in the DB
+     * 
+     * @return \Illuminate\Http\Response
+     */
     public function ambassadors()
     {
         $ambassadors = Ambassador::get();
         $final = [];
         foreach ($ambassadors as $ambassador) {
             if (isset($final[$ambassador->country])) {
-                array_push($final[$ambassador->country], $ambassador);
+                array_push($final[trim($ambassador->country)], $ambassador);
             } else {
-                $final[$ambassador->country] = [$ambassador];
+                $final[trim($ambassador->country)] = [$ambassador];
             }
         }
         return view('ambassadors', ['ambassadorObject' => $final]);
