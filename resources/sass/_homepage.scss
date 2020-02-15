@@ -244,6 +244,10 @@ section {
      padding: 40px 23px;
      @include b-radius();
      height: 360px;
+     transition: .3s ease-in-out;
+     &:hover {
+         background: darken($color: #E6EFFF, $amount: 10%);
+     }
     span.day {
         font-size: 78px;
         display: block;
@@ -270,12 +274,24 @@ section {
     }
     &:nth-child(2) {
         background: #FFEEE6;
+        transition: .3s ease-in-out;
+        &:hover {
+            background: darken($color: #FFEEE6, $amount: 10%);
+        }
       }
       &:nth-child(3) {
         background: #FFFBE6;
+        transition: .3s ease-in-out;
+        &:hover {
+            background: darken($color: #FFFBE6, $amount: 10%);
+        }
       }
       &:nth-child(4) {
         background: #CDCBE2;
+        transition: .3s ease-in-out;
+        &:hover {
+            background: darken($color: #CDCBE2, $amount: 10%);
+        }
       }
  }
 
@@ -543,7 +559,7 @@ section {
             transition: .3s ease-in-out;
             @include button-hover;
             @include b-radius;
-            margin-left: -15px;
+            margin-left: -8px;
             padding:10px;
             &:hover{
                 background-color: #C2F3D4;
