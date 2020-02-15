@@ -15,6 +15,7 @@
     </thead>
     <tbody>
     @foreach ($ambassadors as $ambassador)
+    
     <tr>
         <td data-column="First Name" class="name">
             {{$ambassador->full_name}}

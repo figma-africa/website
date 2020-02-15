@@ -16792,7 +16792,7 @@ section {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   border-radius: 4px;
-  margin-left: -15px;
+  margin-left: -8px;
   padding: 10px;
 }
 
@@ -17345,6 +17345,12 @@ table tr th {
   border-bottom: 0;
 }
 
+@media only screen and (max-width: 991px) {
+  table tr {
+    border-bottom: 1px solid #c4c4c4;
+  }
+}
+
 th {
   background: #F1F1F1;
   color: #333;
@@ -17412,6 +17418,12 @@ td:last-child a::before {
           transform: rotate(180deg);
 }
 
+@media only screen and (max-width: 991px) {
+  td {
+    border: 0;
+  }
+}
+
 th {
   padding: 10px;
   border-bottom: 1px solid #c4c4c4;
@@ -17464,12 +17476,36 @@ td.name {
   width: 60%;
 }
 
+@media only screen and (max-width: 991px) {
+  td.name {
+    width: 100%;
+  }
+}
+
 td.location {
   width: 25%;
 }
 
+@media only screen and (max-width: 991px) {
+  td.location {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    width: auto;
+  }
+}
+
 td.view-profile {
   width: 15%;
+}
+
+@media only screen and (max-width: 991px) {
+  td.view-profile {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    width: auto;
+    float: right;
+    padding-right: 25px;
+  }
 }
 
 .design-challenges-section .card {
