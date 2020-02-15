@@ -34,6 +34,6 @@ class CreateAmbassadorTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ambassador');
+        Schema::dropIfExists('ambassadors');
     }
 }
